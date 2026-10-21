@@ -41,6 +41,7 @@ layout: layouts/base.njk
 
   <p class="article__tools">
     <button type="button" class="button button--small" data-copy-link hidden>Copy link</button>
-    <a class="button button--small" href="/corrections/">Report an error</a>
+     <a class="button button--small" href="{{ ('Correction: ' + title) | issueUrl('Page: ' + (page.url | absUrl(site.url)) + '\n\nClaim:\n\nWhat is wrong:\n\nSource:') }}" rel="noreferrer">Report an error</a>
+     <a class="button button--small" href="{{ page.inputPath | editUrl }}" rel="noreferrer">Suggest an edit</a>
   </p>
 </article>

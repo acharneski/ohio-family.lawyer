@@ -13,6 +13,6 @@ This text must be reviewed by an Ohio attorney before launch (see the legal risk
 
 Everything on this site is general educational information about Ohio law and policy. It may be incomplete or out of date. Laws change, and every page that discusses law shows the date it was last checked.
 
-Reading this site, emailing us, or submitting a story **does not create an attorney-client relationship**, and what you send us is **not confidential or privileged**. Do not send details of a pending case.
+This is an open-source community project. Reading this site, opening an issue or pull request, or otherwise contributing **does not create an attorney-client relationship**. Anything posted to the project's GitHub repository is **public, not confidential, and not privileged**. Do not post details of a pending case.
 
 For advice about your situation, consult a licensed Ohio attorney or a [legal aid organization](/resources/#directory).

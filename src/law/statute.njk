@@ -28,6 +28,10 @@ eleventyComputed:
   </header>
 
   <p class="law-as-of"><strong>Plain-language summary, not the statute text.</strong> Laws change. Read the official text and confirm current law before relying on anything here.</p>
+   {% if not info %}
+     <p class="fine-print">No plain-language summary yet. <a href="{{ 'src/_data/statuteInfo.json' | editUrl }}" rel="noreferrer">Help write one on GitHub</a>.</p>
+   {% endif %}
+
 
   {% if official %}
     <p><a class="button button--primary" href="{{ official }}" rel="noreferrer">Read the official text of {{ hub.label }}</a></p>

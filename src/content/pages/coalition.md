@@ -15,4 +15,6 @@ We are building a coalition of parenting-rights groups, children's advocates, ci
 4. Courts should measure outcomes and publish data.
 5. Reform is judged by its incentives, not its intentions.
 
-Organizations interested in joining: [{{ site.contactEmail }}](mailto:{{ site.contactEmail }}?subject=Coalition).
+## Join
+
+The coalition is organized in the open, like the rest of this project. Organizations interested in joining can [open an issue on GitHub]({{ "Coalition: [organization name]" | issueUrl("Organization:\nWebsite:\nWhich principles you endorse:\nHow you'd like to be involved:") }}). Individuals are just as welcome: see [Contribute](/contribute/) for ways to help with research, writing, review, and code.

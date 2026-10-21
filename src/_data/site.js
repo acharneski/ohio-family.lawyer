@@ -1,7 +1,10 @@
 // Global site data. Brand name is provisional (see idea.md §12, open question 3).
+// This is a community project: all contact and contribution happens on GitHub.
+const REPO = "https://github.com/acharneski/ohio-family.lawyer";
+
 export default {
   name: "ohio-family.lawyer",
-  publisher: "ohio-family.lawyer editorial board",
+   publisher: "ohio-family.lawyer contributors",
   url: process.env.SITE_URL || "https://ohio-family.lawyer",
    lang: "en-US",
    locale: "en_US",
@@ -24,8 +27,15 @@ export default {
   mission:
     "Make Ohio's family courts accountable, measurable, and fair to every person they affect by informing the public, equipping litigants, and organizing legislative reform.",
   year: new Date().getFullYear(),
-  contactEmail: "editor@ohio-family.lawyer",
-  pressEmail: "press@ohio-family.lawyer",
+
+   // Open-source repository. Issues and pull requests are the only contact channel.
+   repo: {
+     url: REPO,
+     issues: `${REPO}/issues`,
+     newIssue: `${REPO}/issues/new`,
+     pulls: `${REPO}/pulls`,
+     branch: "master",
+   },
 
   nav: {
     primary: [
@@ -35,6 +45,7 @@ export default {
       { label: "Resources", url: "/resources/" },
       { label: "Reform", url: "/reform/" },
       { label: "Act", url: "/act/" },
+       { label: "Contribute", url: "/contribute/" },
     ],
     footer: [
       { label: "Research", url: "/research/" },
@@ -45,6 +56,8 @@ export default {
       { label: "Foundations", url: "/foundations/" },
       { label: "Coalition", url: "/coalition/" },
       { label: "About", url: "/about/" },
+       { label: "Contribute", url: "/contribute/" },
+       { label: "Source on GitHub", url: REPO },
       { label: "Press", url: "/press/" },
       { label: "Corrections", url: "/corrections/" },
       { label: "Privacy", url: "/privacy/" },

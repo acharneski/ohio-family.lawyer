@@ -4,6 +4,7 @@
       <h2 id="footer-about" class="site-footer__heading">{{ site.name }}</h2>
       <p>{{ site.mission }}</p>
       <p class="fine-print">{{ site.disclaimer.short }}</p>
+       <p>An open-source community project. <a href="/contribute/">Get involved</a>.</p>
     </section>
 
     <nav class="site-footer__nav" aria-label="Footer">
@@ -28,6 +29,7 @@
 
   <div class="wrap site-footer__base">
     <p>© {{ site.year }} {{ site.publisher }}. Text licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noreferrer">CC BY 4.0</a> unless noted.</p>
+     <p>Built in the open: <a href="{{ site.repo.url }}" rel="noreferrer">source on GitHub</a> · <a href="{{ site.repo.issues }}" rel="noreferrer">issues</a>{% if page.inputPath %} · <a href="{{ page.inputPath | editUrl }}" rel="noreferrer">Improve this page</a>{% endif %}</p>
     <p>No trackers, no third-party scripts, no cookies. <a href="/privacy/">Privacy</a> · <a href="/corrections/">Corrections</a> · Feeds: <a href="/news/feed.xml">news</a>, <a href="/essays/feed.xml">essays</a></p>
   </div>
 </footer>

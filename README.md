@@ -1,6 +1,12 @@
 # ohio-family.lawyer
 
-A static, evidence-first publication and advocacy hub on Ohio family law. See `idea.md` for the full plan.
+A static, evidence-first publication and advocacy hub on Ohio family law, built as an open-source community project. See `idea.md` for the full plan.
+
+## Contributing
+
+Everyone is welcome: corrections, bill suggestions, county verification, statute summaries, guides, reviews, and code. There is no mailbox. All contact happens through [issues](https://github.com/acharneski/ohio-family.lawyer/issues) and pull requests. Start with [`CONTRIBUTING.md`](CONTRIBUTING.md) and the site's `/contribute/` page.
+
+GitHub is public: never post case numbers, names of private individuals, children's information, or pending-case details.
 
 ## Stack
 

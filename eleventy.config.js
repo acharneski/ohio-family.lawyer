@@ -103,6 +103,20 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("byId", (items = [], ids = []) =>
     items.filter((it) => ids.includes(it.id)),
   );
+   // ---------- Community (GitHub) links ----------
+   // Link to edit a source file on GitHub, e.g. {{ page.inputPath | editUrl }}.
+   eleventyConfig.addFilter(
+     "editUrl",
+     (inputPath = "") =>
+       `${site.repo.url}/edit/${site.repo.branch}/${String(inputPath).replace(/^\.\//, "")}`,
+   );
+   // Prefilled new-issue link, e.g. {{ "Correction: Title" | issueUrl("Page: …") }}.
+   eleventyConfig.addFilter("issueUrl", (title = "", body = "") => {
+     const u = new URL(site.repo.newIssue);
+     if (title) u.searchParams.set("title", title);
+     if (body) u.searchParams.set("body", body);
+     return u.href;
+   });
 
   // Related content, scored by shared statutes, tags, and reform priorities.
   eleventyConfig.addFilter("relatedTo", (items = [], url, ref = {}) => {

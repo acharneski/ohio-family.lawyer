@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 title: "Take action"
 seoTitle: "Contact Ohio Legislators About Family Court Reform"
-summary: "Testimony templates, call scripts, and how to reach your legislators. Nothing you do here is tracked or stored."
+summary: "Testimony templates, call scripts, how to reach your legislators, and how to help build this open-source project. Nothing you do here is tracked."
 type: page
 status: published
 ---
@@ -27,8 +27,18 @@ Ohio committees accept **proponent**, **opponent**, and **interested-party** tes
 
 ## 4. Share your story (with consent)
 
-A consent-first story intake form is coming. You will be able to choose **never publish**, **anonymized only**, or **named**. We will never ask for case numbers or children's names. Statements made to third parties can be subpoenaed, so talk to your attorney first.
+This project runs entirely in public on GitHub, and there is no private intake channel yet. **Please do not post your personal story, case details, or anyone's names in a GitHub issue.** Statements made to third parties can be used in litigation, so talk to your attorney first.
+
+What helps most right now is knowledge about the *system*: how a local rule works in your county, where a court website moved, or which bill we're missing. See step 6.
 
 ## 5. Public comment calendar
 
 Supreme Court of Ohio rule-comment periods, ODJFS rulemaking, and JCARR dates will be listed here.
+## 6. Help build this site
+ohio-family.lawyer is an open-source community project on [GitHub]({{ site.repo.url }}). You can:
+- [report an error]({{ site.repo.newIssue }}?template=correction.md) or [suggest a bill to track]({{ site.repo.newIssue }}?template=bill.md);
+- verify your county's court and child support links;
+- draft a guide, a brief, or a plain-language statute summary;
+- review content if you are a practitioner, mediator, clinician, or DV advocate;
+- improve the code, design, or accessibility.
+See [Contribute](/contribute/) for how to start.

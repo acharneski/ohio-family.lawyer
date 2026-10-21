@@ -44,6 +44,7 @@ We link to official sources instead of hosting copies that go stale. A county-by
 <h2 id="directory">Directory: free and low-cost help</h2>
 
 Directory v1 is in progress: statewide legal aid, mediation programs, court self-help centers, county CSEAs, and complaint channels. **No paid placement, ever.**
+Know a legal-aid or mediation program we should list? [Contribute on GitHub](/contribute/).
 Browse [family court resources for all 88 Ohio counties](/resources/counties/), and see the [Ohio law index](/law/) for plain-language summaries of every statute and rule we cite.
 
 

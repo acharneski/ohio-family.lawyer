@@ -15,6 +15,7 @@ summary: "News, essays, practical resources, and organized reform for Ohio's fam
     <div class="button-row">
       <a class="button button--primary" href="/start/">Start here</a>
       <a class="button" href="/act/">Take action</a>
+       <a class="button" href="/contribute/">Get involved</a>
     </div>
   </div>
 </section>
@@ -122,6 +123,21 @@ summary: "News, essays, practical resources, and organized reform for Ohio's fam
     <p><a href="/about/">Our editorial standards</a> · <a href="/corrections/">Corrections</a></p>
   </div>
 </section>
+<section class="home-section wrap" aria-labelledby="open-heading">
+   <div class="section-head">
+     <h2 id="open-heading">Built in the open</h2>
+     <p><a href="{{ site.repo.url }}" rel="noreferrer">Source on GitHub</a></p>
+   </div>
+   <p class="section-lede">This site is an open-source community project. Every page, data file, and line of code is public, and anyone can help. You don't need to be a lawyer or a programmer.</p>
+   <ul class="standards-grid">
+     <li><strong>Fix a mistake.</strong> <a href="{{ site.repo.newIssue }}?template=correction.md" rel="noreferrer">Report an error</a>, or use "Improve this page" in any footer to edit it directly.</li>
+     <li><strong>Track a bill.</strong> <a href="{{ site.repo.newIssue }}?template=bill.md" rel="noreferrer">Suggest a bill</a> affecting Ohio family courts.</li>
+     <li><strong>Verify your county.</strong> Help check court, local-rules, and CSEA links for all <a href="/resources/counties/">88 counties</a>.</li>
+     <li><strong>Write or review.</strong> Draft a guide or statute summary, or review content you're qualified to check.</li>
+   </ul>
+   <p><a class="button button--primary" href="/contribute/">How to contribute</a></p>
+</section>
+
 
 <section class="home-section wrap" aria-labelledby="newsletter-heading">
   <div class="newsletter">
@@ -139,7 +155,7 @@ summary: "News, essays, practical resources, and organized reform for Ohio's fam
         <p class="fine-print">Delivered by {{ site.newsletter.provider }}. No tracking pixels on our side. Unsubscribe anytime. <a href="/privacy/">Privacy</a>.</p>
       </form>
     {% else %}
-      <p class="notice">Newsletter signup opens soon. Meanwhile, follow the <a href="/news/feed.xml">news feed</a>.</p>
+       <p class="notice">Newsletter signup opens soon. Meanwhile, follow the <a href="/news/feed.xml">news feed</a>, or watch the <a href="{{ site.repo.url }}" rel="noreferrer">GitHub repository</a> for every update.</p>
     {% endif %}
   </div>
 </section>

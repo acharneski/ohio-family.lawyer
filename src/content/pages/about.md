@@ -8,6 +8,9 @@ status: published
 ## Mission
 
 {{ site.mission }}
+## Built in the open
+This site is an open-source community project. All content, data, and code live in a public repository at [github.com/acharneski/ohio-family.lawyer]({{ site.repo.url }}). Anyone can propose a correction, suggest a bill to track, verify a county's court links, draft a guide, or improve the code. Every change is reviewed and recorded in the commit history. See [Contribute](/contribute/).
+
 
 ## Editorial standards
 
@@ -27,4 +30,4 @@ status: published
 
 ## Contact
 
-[{{ site.contactEmail }}](mailto:{{ site.contactEmail }})
+We don't run a mailbox. Open an [issue on GitHub]({{ site.repo.issues }}) for questions, corrections, and suggestions. GitHub is public, so never post case numbers, names of private individuals, or details of a pending case.
