@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/essay.njk",
+  "type": "foundation",
+  "toc": true,
+  "permalink": "/foundations/{{ page.fileSlug }}/"
+}

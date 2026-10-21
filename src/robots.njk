@@ -1,0 +1,15 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+{% if site.indexable -%}
+User-agent: *
+Allow: /
+Disallow: /pagefind/
+
+Sitemap: {{ "/sitemap.xml" | absUrl(site.url) }}
+{%- else -%}
+# Preview deploy: not for indexing.
+User-agent: *
+Disallow: /
+{%- endif %}

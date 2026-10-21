@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+title: "Glossary of Ohio family law terms"
+seoTitle: "Ohio Family Law Glossary: Custody, Support & Court Terms"
+summary: "Plain-language definitions of Ohio custody, parenting-time, child support, and protection-order terms, from allocation of parental rights to Title IV-D."
+type: page
+schema: glossary
+permalink: /resources/glossary/
+---
+<div class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/resources/">Resources</a></li><li aria-current="page">Glossary</li></ol></nav>
+  <header class="page-header">
+    <h1>Glossary of Ohio family law terms</h1>
+    <p class="lede">{{ summary }}</p>
+  </header>
+
+  {% callout "verify" %}
+General definitions for orientation, not legal advice. Terms can have specific meanings in a particular statute or local rule.
+  {% endcallout %}
+
+  <dl class="glossary">
+    {% for g in glossary %}
+      <div class="glossary__entry">
+        <dt id="{{ g.term | toSlug }}"><dfn>{{ g.term }}</dfn> <a class="glossary__anchor" href="#{{ g.term | toSlug }}" aria-label="Link to {{ g.term }}">#</a></dt>
+        <dd>{{ g.definition }}</dd>
+      </div>
+    {% endfor %}
+  </dl>
+
+  <p class="fine-print">See also the <a href="/law/">Ohio law index</a> and <a href="/start/">Start here</a>.</p>
+</div>

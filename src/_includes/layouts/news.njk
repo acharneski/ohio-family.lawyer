@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+---
+<article class="wrap article article--news">
+  <header class="article__header">
+    {% include "partials/article-meta.njk" %}
+    {% if source_url %}
+      <p class="meta-line">Source: <a href="{{ source_url }}" rel="noreferrer">{{ source_name or source_url }}</a></p>
+    {% endif %}
+  </header>
+
+  {% include "partials/status-notice.njk" %}
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+
+  {% include "partials/reform-hooks.njk" %}
+   {% include "partials/related.njk" %}
+  {% include "partials/changelog.njk" %}
+</article>

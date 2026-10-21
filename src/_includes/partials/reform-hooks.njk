@@ -1,0 +1,12 @@
+{% if reform_priorities and reform_priorities.length %}
+  <section class="reform-hooks" aria-labelledby="reform-hooks-heading">
+    <h2 id="reform-hooks-heading">What to do about it</h2>
+    <p>This piece connects to these reform priorities:</p>
+    <ul class="reform-hooks__list">
+      {% for p in reformAgenda | byId(reform_priorities) %}
+        <li><a href="/reform/agenda/{{ p.slug }}/"><span class="tile__num">{{ p.id }}</span> {{ p.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <p><a class="button button--primary" href="/act/">Take action</a></p>
+  </section>
+{% endif %}

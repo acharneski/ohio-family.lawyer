@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: "Policy briefs"
+seoTitle: "Ohio Family Court Policy Briefs for Legislators"
+summary: "One- to three-page briefs for legislators and staff, printable and sourced."
+type: page
+---
+{% from "partials/card.njk" import card with context %}
+<div class="wrap">
+  <header class="page-header">
+    <h1>Policy briefs</h1>
+    <p class="lede">{{ summary }} Every brief covers current Ohio law, the proposal, the evidence, the strongest objections, preserved protections, fiscal impact, and a rubric score.</p>
+  </header>
+  <div class="card-list">
+    {% for item in collections.briefs %}
+      {{ card(item) }}
+    {% else %}
+      <p class="empty">The first three briefs are in drafting. See the <a href="/reform/agenda/">reform agenda</a>.</p>
+    {% endfor %}
+  </div>
+</div>

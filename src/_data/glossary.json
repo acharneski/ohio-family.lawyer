@@ -1,0 +1,21 @@
+[
+  { "term": "Acknowledgment of paternity", "definition": "A sworn form signed by both parents that legally establishes who a child's father is without a court case. In Ohio it establishes parentage and the support obligation, but it does not by itself create an enforceable parenting-time order." },
+  { "term": "Allocation of parental rights and responsibilities", "definition": "Ohio's statutory term for what is commonly called custody: the court's decision about which parent, or both, has decision-making authority and where the child primarily lives. See ORC § 3109.04." },
+  { "term": "Arrearage (arrears)", "definition": "Child support that was ordered but not paid. Arrears generally remain owed until paid, and enforcement can continue after the child is emancipated." },
+  { "term": "Child support enforcement agency (CSEA)", "definition": "The county agency that establishes, collects, and enforces child support orders under the state and federal Title IV-D program. In most counties it is part of the county department of job and family services." },
+  { "term": "Civil protection order (CPO)", "definition": "A court order protecting a person from domestic violence, under ORC § 3113.31. An emergency (ex parte) order can be issued quickly, followed by a full hearing where both sides are heard." },
+  { "term": "Companionship or visitation", "definition": "Court-ordered time with a child for a non-parent, such as a grandparent or other relative. Ohio uses \"parenting time\" for parents. See ORC §§ 3109.051, 3109.11, and 3109.12." },
+  { "term": "Contempt", "definition": "A finding that a person disobeyed a court order, such as a support or parenting-time order. Sanctions can include fines, jail, and paying the other side's attorney fees." },
+  { "term": "Domestic relations court", "definition": "The court, usually a division of the county court of common pleas, that hears divorce, dissolution, and legal separation cases and the custody and support issues within them." },
+  { "term": "Ex parte", "definition": "A court action taken after hearing from only one side, usually in an emergency. An ex parte order is temporary and is followed by a full hearing." },
+  { "term": "Guardian ad litem (GAL)", "definition": "A person appointed by the court to investigate and recommend what is in a child's best interest. Standards for GALs are set by the Rules of Superintendence (Sup.R. 48)." },
+  { "term": "Imputed income", "definition": "Income a court attributes to a parent for child support purposes based on what the parent could earn, rather than what the parent actually earns. Governed by ORC Chapter 3119." },
+  { "term": "Juvenile court", "definition": "The court that, in most Ohio counties, hears custody, parenting-time, and support cases between parents who were never married to each other, as well as abuse, neglect, and dependency cases." },
+  { "term": "Legal custodian", "definition": "The person with legal authority over a child's care and major decisions. Under ORC § 3109.042, an unmarried mother is the sole residential parent and legal custodian until a court orders otherwise." },
+  { "term": "Magistrate", "definition": "A court officer who hears many family cases and issues decisions that a judge must adopt. A party can file written objections to a magistrate's decision, generally within 14 days." },
+  { "term": "Parenting time", "definition": "The time a parent spends with a child under a court order. See ORC § 3109.051." },
+  { "term": "Pro se", "definition": "Representing yourself in court without a lawyer." },
+  { "term": "Residential parent", "definition": "The parent with whom a child primarily lives, and whose residence usually determines the child's school district." },
+  { "term": "Shared parenting", "definition": "An arrangement under ORC § 3109.04 in which both parents share parental rights and responsibilities under a court-approved shared parenting plan. It does not necessarily mean equal time." },
+  { "term": "Title IV-D", "definition": "The part of the federal Social Security Act that funds state child support enforcement programs, including federal incentive payments tied to performance measures such as collections." }
+]

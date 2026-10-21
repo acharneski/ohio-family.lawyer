@@ -1,0 +1,33 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <section class="site-footer__about" aria-labelledby="footer-about">
+      <h2 id="footer-about" class="site-footer__heading">{{ site.name }}</h2>
+      <p>{{ site.mission }}</p>
+      <p class="fine-print">{{ site.disclaimer.short }}</p>
+    </section>
+
+    <nav class="site-footer__nav" aria-label="Footer">
+      <h2 class="site-footer__heading">More</h2>
+      <ul>
+        {% for item in site.nav.footer %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <section class="site-footer__crisis" aria-labelledby="footer-crisis">
+      <h2 id="footer-crisis" class="site-footer__heading">Need help now?</h2>
+      <ul>
+        <li>Emergency: <a href="tel:{{ site.crisis.emergency.tel }}">{{ site.crisis.emergency.display }}</a></li>
+        <li>{{ site.crisis.lifeline.label }}: <a href="tel:{{ site.crisis.lifeline.tel }}">{{ site.crisis.lifeline.display }}</a></li>
+        <li>{{ site.crisis.dv.label }}: <a href="tel:{{ site.crisis.dv.tel }}">{{ site.crisis.dv.display }}</a> · {{ site.crisis.dv.text }}</li>
+        <li><a href="/support/">Support and peer resources</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="wrap site-footer__base">
+    <p>© {{ site.year }} {{ site.publisher }}. Text licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noreferrer">CC BY 4.0</a> unless noted.</p>
+    <p>No trackers, no third-party scripts, no cookies. <a href="/privacy/">Privacy</a> · <a href="/corrections/">Corrections</a> · Feeds: <a href="/news/feed.xml">news</a>, <a href="/essays/feed.xml">essays</a></p>
+  </div>
+</footer>

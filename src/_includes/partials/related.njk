@@ -1,0 +1,14 @@
+{% set relatedItems = collections.all | relatedTo(page.url, { tags: tags, statutes: statutes, reform_priorities: reform_priorities }) | limit(4) %}
+{% if relatedItems.length %}
+  <section class="related" aria-labelledby="related-heading">
+    <h2 id="related-heading">Related reading</h2>
+    <ul class="related__list">
+      {% for r in relatedItems %}
+        <li>
+          <a href="{{ r.url }}">{{ r.data.title }}</a>
+          {% if r.data.summary %}<span class="related__summary">{{ r.data.summary }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}

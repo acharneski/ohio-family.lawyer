@@ -1,0 +1,10 @@
+{% if changelog and changelog.length %}
+  <details class="changelog">
+    <summary>Change log</summary>
+    <ul>
+      {% for entry in changelog %}
+        <li><time datetime="{{ entry.date | isoDate }}">{{ entry.date | readableDate }}</time>: {{ entry.note }}</li>
+      {% endfor %}
+    </ul>
+  </details>
+{% endif %}

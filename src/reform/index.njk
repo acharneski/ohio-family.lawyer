@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+title: "Reform"
+seoTitle: "Ohio Family Court Reform Platform"
+summary: "The platform: twelve numbered priorities, a bill tracker, model language, and a legislator scorecard, all judged by a published rubric."
+type: page
+---
+<div class="wrap">
+  <header class="page-header">
+    <p class="eyebrow">The platform</p>
+    <h1>Reform</h1>
+    <p class="lede">Evidence and due process for every parent. Real protection for every child. {{ summary }}</p>
+  </header>
+
+  <div class="hub-grid">
+    <a class="hub-card" href="/reform/agenda/">
+      <h2>Agenda</h2>
+      <p>{{ reformAgenda.length }} numbered priorities, each with current law, the proposal, and the strongest objections.</p>
+    </a>
+    <a class="hub-card" href="/reform/bill-tracker/">
+      <h2>Bill tracker</h2>
+      <p>Current Ohio bills, their status, and our position, scored against the rubric.</p>
+    </a>
+    <div class="hub-card hub-card--soon">
+      <h2>Model language</h2>
+      <p>Draft bill and rule text for each priority. <span class="pill pill--muted">Coming</span></p>
+    </div>
+    <div class="hub-card hub-card--soon">
+      <h2>Scorecard</h2>
+      <p>Votes, sponsorships, and public statements, with citations only. <span class="pill pill--muted">Coming</span></p>
+    </div>
+  </div>
+
+  <section class="home-section" aria-labelledby="rubric-heading">
+    <h2 id="rubric-heading">How we decide positions</h2>
+    <p>Every bill and practice is scored against seven questions drawn from our <a href="/foundations/">framework</a>:</p>
+    <ol class="rubric-list">
+      {% for r in site.rubric %}<li>{{ r.question }}</li>{% endfor %}
+    </ol>
+    <p><strong>Test question:</strong> {{ site.rubricTest }}</p>
+  </section>
+</div>

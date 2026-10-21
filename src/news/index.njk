@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: "News"
+seoTitle: "Ohio Family Law News: Custody, Support & Court Rules"
+summary: "Bills, rule changes, appellate decisions, and agency data affecting Ohio domestic relations and juvenile courts."
+type: page
+---
+{% from "partials/card.njk" import card with context %}
+<div class="wrap">
+  <header class="page-header">
+    <h1>News</h1>
+    <p class="lede">{{ summary }} Every item is dated, sourced, and labeled. News does not editorialize.</p>
+    <p class="meta-line"><a href="/news/feed.xml">Atom feed</a></p>
+  </header>
+  <div class="card-list">
+    {% for item in collections.news %}
+      {{ card(item) }}
+    {% else %}
+      <p class="empty">No news items yet.</p>
+    {% endfor %}
+  </div>
+</div>

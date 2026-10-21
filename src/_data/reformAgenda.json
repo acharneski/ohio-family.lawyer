@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "slug": "presumption-of-standing",
+    "title": "Presumption of standing",
+    "short": "A legally established parent should have presumptive standing to a real relationship with their child.",
+    "problem": "Under ORC § 3109.042, an unmarried mother is the sole residential parent and legal custodian until a court orders otherwise. A father whose parentage is established must still petition before he has any enforceable parenting time.",
+    "proposal": "Once parentage is established by acknowledgment or adjudication, presume standing to a meaningful relationship, and place the burden on the party seeking to limit it.",
+    "statutes": ["ORC 3109.042"]
+  },
+  {
+    "id": 2,
+    "slug": "shared-parenting-presumption",
+    "title": "Rebuttable presumption of shared parenting",
+    "short": "Equal or substantially equal parenting time, rebuttable on evidence of danger or unfitness, with written findings.",
+    "problem": "Allocation under ORC § 3109.04 begins from open-ended discretion, so outcomes vary by county and judge and conflict is rewarded.",
+    "proposal": "Start from equal or substantially equal time. Allow rebuttal on evidence of danger or unfitness, and require written findings when the presumption is overcome.",
+    "statutes": ["ORC 3109.04"],
+    "verify": "Verify the current status of shared-parenting presumption legislation in the Ohio General Assembly before publishing copy that describes it as pending or absent."
+  },
+  {
+    "id": 3,
+    "slug": "tie-obligations-to-standing",
+    "title": "Tie obligations to standing",
+    "short": "Enforce parenting time as quickly and cheaply as child support is enforced.",
+    "problem": "Support is enforced administratively and automatically. Parenting-time violations require a private motion, a lawyer, and months of waiting.",
+    "proposal": "Create an administrative enforcement option for parenting time, presumptive make-up time, and fee-shifting for unjustified interference.",
+    "statutes": ["ORC 3109.051", "ORC 3119"]
+  },
+  {
+    "id": 4,
+    "slug": "outcome-measurement",
+    "title": "Outcome measurement mandate",
+    "short": "Publish anonymized, longitudinal outcome data on contested custody orders.",
+    "problem": "Courts track filings, time to disposition, and collections. They do not track how children fare five or ten years after a contested order.",
+    "proposal": "Require the Supreme Court of Ohio or ODJFS to publish anonymized longitudinal outcome data broken out by type of order.",
+    "statutes": []
+  },
+  {
+    "id": 5,
+    "slug": "gal-evaluator-reform",
+    "title": "GAL and evaluator reform",
+    "short": "Rate transparency, rotation, evidence-based reports, conflict disclosure, and a complaint process with teeth.",
+    "problem": "Guardians ad litem and evaluators carry great weight, are often paid by the parties, and face limited outside correction.",
+    "proposal": "Adopt fee caps and published rates, rotate appointments, require written reports that state their evidentiary basis, mandate conflict-of-interest disclosure, and create an effective complaint process.",
+    "statutes": ["Sup.R. 48"]
+  },
+  {
+    "id": 6,
+    "slug": "weaken-conflict-gradient",
+    "title": "Weaken the conflict gradient",
+    "short": "Early mediation, default schedules, and limits on repetitive motions.",
+    "problem": "The system's resources flow toward prolonged dispute. Families that settle quickly generate little for it.",
+    "proposal": "Default to early mediation (with DV screening), adopt default parenting schedules, limit repetitive motions, and review fee structures that reward prolonged litigation.",
+    "statutes": []
+  },
+  {
+    "id": 7,
+    "slug": "imputed-income-limits",
+    "title": "Imputed income limits",
+    "short": "Evidence thresholds, time limits, and mandatory review before imputing income.",
+    "problem": "Support can be set on income a parent does not earn, based on the court's estimate of what they could earn.",
+    "proposal": "Require specific evidence before imputing income, limit how long imputation lasts, and require periodic review.",
+    "statutes": ["ORC 3119"]
+  },
+  {
+    "id": 8,
+    "slug": "arrears-proportionality",
+    "title": "Arrears and enforcement proportionality",
+    "short": "Modification windows, forgiveness pathways, and limits on punitive suspensions after involuntary income loss.",
+    "problem": "Arrears accumulate quickly after job loss, and license or passport suspension can make repayment harder.",
+    "proposal": "Allow retroactive-modification windows, create forgiveness pathways, and cap punitive license and passport suspensions where non-payment follows involuntary income loss.",
+    "statutes": ["ORC 3119", "ORC 2919.21"]
+  },
+  {
+    "id": 9,
+    "slug": "evidence-standards-allegations",
+    "title": "Evidence standards for allegations",
+    "short": "Findings before restricting contact on unadjudicated allegations, expedited hearings, and consequences for knowingly false claims.",
+    "problem": "Contact can be restricted for long periods on allegations that are never adjudicated.",
+    "proposal": "Require findings before contact is restricted beyond an emergency period, guarantee expedited hearings on emergency restrictions, and impose consequences for knowingly false allegations.",
+    "protections": "Ex parte and emergency civil protection orders for genuine danger remain fast and low-barrier. This proposal shortens the time to a hearing; it does not raise the bar for emergency protection.",
+    "statutes": ["ORC 3113.31", "ORC 3109.04"]
+  },
+  {
+    "id": 10,
+    "slug": "dissent-is-information",
+    "title": "Dissent is information",
+    "short": "A protected process for procedural objections, and a rule that objecting is not evidence of 'high conflict.'",
+    "problem": "A parent who challenges a recommendation or a process risks being labeled 'high conflict,' so protest becomes evidence against the protester.",
+    "proposal": "Create a formal process for procedural objections that requires a written response, and bar treating process complaints as evidence of high conflict without independent findings.",
+    "statutes": []
+  },
+  {
+    "id": 11,
+    "slug": "extended-family-standing",
+    "title": "Extended family standing",
+    "short": "Recognize siblings and grandparents as stakeholders.",
+    "problem": "Siblings and grandparents appear in custody decisions, if at all, only as factors in someone else's case.",
+    "proposal": "Clarify and strengthen standing for siblings and grandparents to seek companionship and continued contact.",
+    "statutes": ["ORC 3109.051", "ORC 3109.11", "ORC 3109.12"]
+  },
+  {
+    "id": 12,
+    "slug": "records-transparency",
+    "title": "Data and public-records transparency",
+    "short": "Make court-operations data public and comparable across all 88 counties.",
+    "problem": "County-level data on custody outcomes, GAL appointments, and contempt filings is hard to obtain and harder to compare.",
+    "proposal": "Publish standardized county-level court operations data and make it routinely available under the Public Records Act.",
+    "statutes": ["ORC 149.43"]
+  }
+]

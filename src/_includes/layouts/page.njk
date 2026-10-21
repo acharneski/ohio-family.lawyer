@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+<article class="wrap page">
+  <header class="page-header">
+    {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+    <h1>{{ title }}</h1>
+    {% if summary %}<p class="lede">{{ summary }}</p>{% endif %}
+    {% if law_as_of %}
+      <p class="meta-line">Law as of <time datetime="{{ law_as_of | isoDate }}">{{ law_as_of | readableDate }}</time> · Verify current law before relying on it.</p>
+    {% endif %}
+  </header>
+  {% include "partials/status-notice.njk" %}
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+  {% if statutes and statutes.length %}{% include "partials/statutes.njk" %}{% endif %}
+   {% include "partials/related.njk" %}
+</article>

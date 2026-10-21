@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: "Essays"
+seoTitle: "Essays on Ohio Family Court Reform"
+summary: "Long-form arguments for structural reform of Ohio's family courts, cited and steelmanned."
+type: page
+series:
+  - "Institutional Architecture"
+  - "Evidence and Due Process"
+  - "Human Cost"
+---
+{% from "partials/card.njk" import card with context %}
+<div class="wrap">
+  <header class="page-header">
+    <h1>Essays</h1>
+    <p class="lede">{{ summary }} Essays argue. Each one states what it does not claim, answers its strongest objections, and links to the reform agenda.</p>
+    <p class="meta-line"><a href="/essays/feed.xml">Atom feed</a> · Philosophy and framework pieces live under <a href="/foundations/">Foundations</a>.</p>
+  </header>
+
+  {% for s in series %}
+    <section class="series" aria-labelledby="series-{{ loop.index }}">
+      <h2 id="series-{{ loop.index }}">{{ s }}</h2>
+      <div class="card-list">
+        {% set found = false %}
+        {% for item in collections.essays %}
+          {% if item.data.series == s %}{% set found = true %}{{ card(item) }}{% endif %}
+        {% endfor %}
+        {% if not found %}<p class="empty">Forthcoming.</p>{% endif %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

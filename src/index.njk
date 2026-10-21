@@ -1,0 +1,145 @@
+---
+layout: layouts/base.njk
+permalink: /
+type: page
+summary: "News, essays, practical resources, and organized reform for Ohio's family courts. Evidence and due process for every parent; real protection for every child."
+---
+{% from "partials/card.njk" import card with context %}
+{% from "partials/bill.njk" import bill with context %}
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Ohio family law · news · research · reform</p>
+    <h1 class="hero__title">Ohio's family courts should be accountable, measurable, and fair to everyone they affect.</h1>
+    <p class="hero__lede">We track the law, publish the evidence, and organize for reform that counts every parent, every child, and every family member, while keeping real protection from abuse non-negotiable.</p>
+    <div class="button-row">
+      <a class="button button--primary" href="/start/">Start here</a>
+      <a class="button" href="/act/">Take action</a>
+    </div>
+  </div>
+</section>
+
+<section class="safety-strip" aria-labelledby="safety-heading">
+  <div class="wrap safety-strip__inner">
+    <h2 id="safety-heading" class="safety-strip__heading">Safety first</h2>
+    <p>If you or a child are in danger, call <a href="tel:911">911</a>. For a mental-health crisis, call or text <a href="tel:988">988</a>. For domestic violence support, call <a href="tel:{{ site.crisis.dv.tel }}">{{ site.crisis.dv.display }}</a> or {{ site.crisis.dv.text }}.</p>
+    <a class="button button--small" href="/start/safety-first/">Safety resources</a>
+  </div>
+</section>
+
+<section class="home-section wrap" aria-labelledby="latest-heading">
+  <div class="section-head">
+    <h2 id="latest-heading">Latest</h2>
+    <p><a href="/news/">All news</a> · <a href="/essays/">All essays</a></p>
+  </div>
+  <div class="latest-grid">
+    <div class="latest-grid__featured">
+      {% set featured = collections.essays | first %}
+      {% for e in collections.essays %}{% if e.data.featured and not featuredSet %}{% set featured = e %}{% set featuredSet = true %}{% endif %}{% endfor %}
+      {% if featured %}
+        {{ card(featured, true) }}
+      {% else %}
+        <p class="empty">The first essays are in editorial review.</p>
+      {% endif %}
+    </div>
+    <div class="latest-grid__news">
+      <h3 class="list-heading">News</h3>
+      {% set latestNews = collections.news | limit(3) %}
+      {% for item in latestNews %}
+        {{ card(item) }}
+      {% else %}
+        <p class="empty">No news items yet. <a href="/news/feed.xml">Subscribe to the feed</a>.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="home-section home-section--tinted" aria-labelledby="agenda-heading">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="agenda-heading">The reform agenda</h2>
+      <p><a href="/reform/agenda/">See all {{ reformAgenda.length }} priorities</a></p>
+    </div>
+    <p class="section-lede">Twelve numbered priorities. Each one cites current Ohio law, states the strongest objections, and explains how abuse protections are preserved.</p>
+    <ol class="tile-grid">
+      {% for p in reformAgenda %}
+        <li class="tile">
+          <a class="tile__link" href="/reform/agenda/{{ p.slug }}/">
+            <span class="tile__num">{{ p.id }}</span>
+            <span class="tile__title">{{ p.title }}</span>
+            <span class="tile__summary">{{ p.short }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="home-section wrap" aria-labelledby="bills-heading">
+  <div class="section-head">
+    <h2 id="bills-heading">Bill tracker</h2>
+    <p><a href="/reform/bill-tracker/">Full tracker</a></p>
+  </div>
+  {% set active = bills | activeBills | limit(3) %}
+  <div class="bill-grid">
+    {% for b in active %}
+      {{ bill(b, true) }}
+    {% else %}
+      <p class="empty">No active bills are being tracked right now.</p>
+    {% endfor %}
+  </div>
+  <p class="fine-print">Positions follow a <a href="/foundations/">published rubric</a>, not party lines.</p>
+</section>
+<section class="home-section wrap" aria-labelledby="topics-heading">
+   <div class="section-head">
+     <h2 id="topics-heading">Ohio family law by topic</h2>
+     <p><a href="/law/">All statutes and rules</a></p>
+   </div>
+   <ul class="topic-grid">
+     <li><a href="/start/if-youre-a-father/">Unmarried fathers: paternity and parenting time</a></li>
+     <li><a href="/law/orc-3109-042/">ORC § 3109.042: the unmarried-parent custody default</a></li>
+     <li><a href="/law/orc-3109-04/">ORC § 3109.04: custody and shared parenting</a></li>
+     <li><a href="/law/orc-3109-051/">ORC § 3109.051: parenting time</a></li>
+     <li><a href="/law/orc-chapter-3119/">ORC Chapter 3119: child support</a></li>
+     <li><a href="/law/sup-r-48/">Sup.R. 48: guardians ad litem</a></li>
+     <li><a href="/law/orc-3113-31/">ORC § 3113.31: civil protection orders</a></li>
+     <li><a href="/start/if-youre-a-grandparent/">Grandparent and relative visitation</a></li>
+     <li><a href="/resources/counties/">Family court resources by county</a></li>
+     <li><a href="/resources/glossary/">Glossary of Ohio family-law terms</a></li>
+   </ul>
+</section>
+
+
+<section class="home-section home-section--tinted" aria-labelledby="standards-heading">
+  <div class="wrap">
+    <h2 id="standards-heading">How we work</h2>
+    <ul class="standards-grid">
+      <li><strong>Cite everything checkable.</strong> Statutory claims link to the Ohio Revised Code, court rules, or case law, with a "law as of" date.</li>
+      <li><strong>Label argument and reporting.</strong> News and briefs report. Essays argue. Every piece carries a badge.</li>
+      <li><strong>Steelman the opposition.</strong> Every brief answers its strongest objections in writing.</li>
+      <li><strong>Protection is permanent.</strong> No proposal that weakens protection from real abuse, neglect, or domestic violence is in scope.</li>
+    </ul>
+    <p><a href="/about/">Our editorial standards</a> · <a href="/corrections/">Corrections</a></p>
+  </div>
+</section>
+
+<section class="home-section wrap" aria-labelledby="newsletter-heading">
+  <div class="newsletter">
+    <div>
+      <h2 id="newsletter-heading">The weekly digest</h2>
+      <p>Bills, rulings, and data affecting Ohio domestic relations and juvenile courts, in one short weekly email.</p>
+    </div>
+    {% if site.newsletter.action %}
+      <form class="signup" action="{{ site.newsletter.action }}" method="post">
+        <label for="nl-email">Email address</label>
+        <div class="signup__row">
+          <input type="email" id="nl-email" name="email" required autocomplete="email">
+          <button type="submit" class="button button--primary">Subscribe</button>
+        </div>
+        <p class="fine-print">Delivered by {{ site.newsletter.provider }}. No tracking pixels on our side. Unsubscribe anytime. <a href="/privacy/">Privacy</a>.</p>
+      </form>
+    {% else %}
+      <p class="notice">Newsletter signup opens soon. Meanwhile, follow the <a href="/news/feed.xml">news feed</a>.</p>
+    {% endif %}
+  </div>
+</section>

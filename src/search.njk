@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+title: "Search"
+type: page
+pagefind: false
+noindex: true
+permalink: /search/
+---
+<div class="wrap page">
+  <header class="page-header"><h1>Search</h1></header>
+  <div class="search" data-search></div>
+  <noscript><p>Search requires JavaScript. Browse <a href="/news/">news</a>, <a href="/essays/">essays</a>, or <a href="/resources/">resources</a> instead.</p></noscript>
+</div>
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+<script src="/pagefind/pagefind-ui.js"></script>
+<script type="module" src="/assets/js/search.js"></script>

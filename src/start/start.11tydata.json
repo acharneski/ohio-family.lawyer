@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/page.njk",
+  "type": "page",
+  "eyebrow": "Start here"
+}

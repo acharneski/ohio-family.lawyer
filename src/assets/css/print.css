@@ -1,0 +1,54 @@
+/* Briefs and guides print cleanly to PDF. */
+.crisis-banner,
+.disclaimer-banner,
+.site-header,
+.site-footer__nav,
+.site-footer__crisis,
+.toc,
+.reading-progress,
+.back-to-top,
+.article__tools,
+.button,
+.pager,
+.safety-strip {
+  display: none !important;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-size: 11pt;
+}
+
+.wrap,
+.prose {
+  width: auto;
+  max-width: none;
+}
+
+.article__body.has-toc {
+  display: block;
+}
+
+.prose a[href^="http"]::after {
+  content: " (" attr(href) ")";
+  font-size: 0.85em;
+  word-break: break-all;
+}
+
+h2,
+h3 {
+  break-after: avoid;
+}
+
+.callout,
+.bill,
+.card {
+  break-inside: avoid;
+  box-shadow: none;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  background: none;
+}

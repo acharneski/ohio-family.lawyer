@@ -1,0 +1,32 @@
+{% macro bill(b, compact=false) %}
+  <article class="bill{% if b.placeholder %} bill--placeholder{% endif %}">
+    <header class="bill__header">
+      <p class="bill__id">{{ b.id }} <span class="muted">· {{ b.ga }}th GA</span></p>
+      <h3 class="bill__title">{% if b.text_url %}<a href="{{ b.text_url }}" rel="noreferrer">{{ b.title }}</a>{% else %}{{ b.title }}{% endif %}</h3>
+      <p class="bill__pills">
+        <span class="pill">{{ b.status }}</span>
+        <span class="pill pill--position pill--{{ b.position }}">{{ b.position | capitalize }}</span>
+        {% if b.placeholder %}<span class="pill pill--warn">Placeholder</span>{% endif %}
+      </p>
+    </header>
+    <p class="meta-line">{{ b.committee }} · Last action <time datetime="{{ b.last_action }}">{{ b.last_action | readableDate }}</time>{% if b.sponsors %} · Sponsors: {{ b.sponsors | join(", ") }}{% endif %}</p>
+    {% if not compact %}
+      <p>{{ b.summary }}</p>
+      {% if b.rubric_score %}
+        <details class="rubric-score">
+          <summary>Rubric score and reasoning</summary>
+          <ul>
+            {% for r in site.rubric %}
+              {% set v = b.rubric_score[r.key] %}
+              <li><span class="score score--{{ 'pos' if v > 0 else ('neg' if v < 0 else 'neutral') }}">{{ '✓' if v > 0 else ('✗' if v < 0 else '–') }}</span> Art. {{ r.article }}: {{ r.question }}</li>
+            {% endfor %}
+          </ul>
+        </details>
+      {% endif %}
+      <p class="bill__links">
+        {% if b.brief %}<a href="{{ b.brief }}">Read our brief</a>{% endif %}
+        <a href="/act/">Take action</a>
+      </p>
+    {% endif %}
+  </article>
+{% endmacro %}

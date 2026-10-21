@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- if seoTitle %}
+    {%- set pageTitle = (seoTitle + " | " + site.name) if (seoTitle | length) <= 45 else seoTitle %}
+  {%- elif title %}
+    {%- set pageTitle = title + " | " + site.name %}
+  {%- else %}
+    {%- set pageTitle = site.name + " — " + site.tagline %}
+  {%- endif %}
+  {%- set pageDescription = seoDescription or summary or site.mission %}
+  {%- set socialTitle = ogTitle or title or site.name %}
+  {%- set pageUrl = canonicalUrl or page.url %}
+  {%- set canonical = (pageUrl | absUrl(site.url)) if pageUrl else "" %}
+  {%- set ogImg = (ogImage or (page.url | ogImagePath)) | absUrl(site.url) %}
+  {%- set isArticle = type in ["essay", "news", "brief", "guide", "foundation"] %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  <meta name="robots" content="{% robotsMeta %}">
+  {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="{{ site.seo.themeColor }}">
+  <meta name="author" content="{{ author or site.publisher }}">
+  {% if site.verification.google %}<meta name="google-site-verification" content="{{ site.verification.google }}">{% endif %}
+  {% if site.verification.bing %}<meta name="msvalidate.01" content="{{ site.verification.bing }}">{% endif %}
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ site.seo.logo }}">
+
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ socialTitle }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta property="og:type" content="{{ 'article' if isArticle else 'website' }}">
+  {% if canonical %}<meta property="og:url" content="{{ canonical }}">{% endif %}
+  <meta property="og:image" content="{{ ogImg }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ socialTitle }}">
+  {% if isArticle %}
+  <meta property="article:published_time" content="{{ page.date | isoDate }}">
+  {% if updated %}<meta property="article:modified_time" content="{{ updated | isoDate }}">{% endif %}
+  <meta property="article:section" content="{{ series or site.types[type] }}">
+  {% for t in tags %}<meta property="article:tag" content="{{ t }}">
+  {% endfor %}
+  {% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ socialTitle }}">
+  <meta name="twitter:description" content="{{ pageDescription }}">
+  <meta name="twitter:image" content="{{ ogImg }}">
+  <meta name="twitter:image:alt" content="{{ socialTitle }}">
+
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/print.css" media="print">
+  <link rel="alternate" type="application/atom+xml" href="/news/feed.xml" title="{{ site.name }} — News">
+  <link rel="alternate" type="application/atom+xml" href="/essays/feed.xml" title="{{ site.name }} — Essays">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  {% jsonLd %}
+  <script type="module" src="/assets/js/main.js"></script>
+</head>
+<body class="type-{{ type or 'page' }}">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  {% include "partials/crisis-banner.njk" %}
+  {% include "partials/header.njk" %}
+  {% include "partials/disclaimer-banner.njk" %}
+
+  <main id="main" tabindex="-1"{% if pagefind != false %} data-pagefind-body{% endif %}>
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+  <button type="button" class="back-to-top" data-back-to-top hidden aria-label="Back to top">
+    <span aria-hidden="true">↑</span>
+  </button>
+</body>
+</html>

@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+type: page
+schema: statute
+pagination:
+  data: collections.statutes
+  size: 1
+  alias: hub
+permalink: "/law/{{ hub.slug }}/"
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ hub.label }}"
+  seoTitle: "{{ hub.label }}: {{ statuteInfo[hub.slug].name if statuteInfo[hub.slug] else 'Ohio law overview' }}"
+  summary: "{{ statuteInfo[hub.slug].summary if statuteInfo[hub.slug] else ('What ' + hub.label + ' covers in Ohio family courts, the official text, and our related coverage.') }}"
+---
+{% from "partials/card.njk" import card with context %}
+{% set info = statuteInfo[hub.slug] %}
+{% set official = hub.cite | statuteUrl %}
+<article class="wrap page">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol><li><a href="/law/">Ohio law index</a></li><li aria-current="page">{{ hub.label }}</li></ol>
+  </nav>
+
+  <header class="page-header">
+    <p class="eyebrow">Ohio law index</p>
+    <h1>{{ hub.label }}{% if info %}: {{ info.name }}{% endif %}</h1>
+    <p class="lede">{{ summary }}</p>
+  </header>
+
+  <p class="law-as-of"><strong>Plain-language summary, not the statute text.</strong> Laws change. Read the official text and confirm current law before relying on anything here.</p>
+
+  {% if official %}
+    <p><a class="button button--primary" href="{{ official }}" rel="noreferrer">Read the official text of {{ hub.label }}</a></p>
+  {% endif %}
+
+  {% if hub.items.length %}
+    <section aria-labelledby="coverage-heading">
+      <h2 id="coverage-heading">Our coverage citing {{ hub.label }}</h2>
+      <div class="card-list">
+        {% for item in hub.items %}{{ card(item) }}{% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if hub.priorities.length %}
+    <section class="reform-hooks" aria-labelledby="priorities-heading">
+      <h2 id="priorities-heading">Reform priorities involving {{ hub.label }}</h2>
+      <ul class="reform-hooks__list">
+        {% for p in hub.priorities %}
+          <li><a href="/reform/agenda/{{ p.slug }}/"><span class="tile__num">{{ p.id }}</span> {{ p.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  <p class="fine-print"><a href="/law/">All statutes and rules we cite</a> · <a href="/resources/glossary/">Glossary</a></p>
+</article>

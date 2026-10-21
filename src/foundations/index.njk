@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+title: "Foundations"
+summary: "The framework we use to evaluate institutions, plus a separate shelf of philosophy and political theory."
+type: page
+---
+{% from "partials/card.njk" import card with context %}
+<div class="wrap">
+  <header class="page-header">
+    <p class="eyebrow">Framework and philosophy</p>
+    <h1>Foundations</h1>
+    <p class="lede">{{ summary }} These pieces are kept apart from the practical policy work so each can be judged on its own terms.</p>
+  </header>
+
+  <section aria-labelledby="rubric-heading">
+    <h2 id="rubric-heading">The evaluation rubric</h2>
+    <p>Condensed from Articles 1–7 of <em>The Alignment Manifesto</em>. Used to score every bill, brief, and court practice on this site.</p>
+    <ol class="rubric-list">
+      {% for r in site.rubric %}<li><strong>Article {{ r.article }}.</strong> {{ r.question }}</li>{% endfor %}
+    </ol>
+    <p class="callout callout--note"><strong>Test question:</strong> {{ site.rubricTest }}</p>
+  </section>
+
+  <section aria-labelledby="shelf-heading">
+    <h2 id="shelf-heading">The shelf</h2>
+    <div class="card-list">
+      {% for item in collections.foundations %}
+        {{ card(item) }}
+      {% else %}
+        <p class="empty">Forthcoming.</p>
+      {% endfor %}
+    </div>
+  </section>
+</div>

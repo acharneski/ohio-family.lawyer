@@ -1,0 +1,61 @@
+---
+layout: layouts/base.njk
+type: page
+pagination:
+  data: reformAgenda
+  size: 1
+  alias: priority
+permalink: "/reform/agenda/{{ priority.slug }}/"
+eleventyComputed:
+  title: "{{ priority.id }}. {{ priority.title }}"
+  seoTitle: "{{ priority.title }}: Ohio Family Court Reform"
+  summary: "{{ priority.short }}"
+---
+<article class="wrap page">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol><li><a href="/reform/">Reform</a></li><li><a href="/reform/agenda/">Agenda</a></li><li aria-current="page">Priority {{ priority.id }}</li></ol>
+  </nav>
+
+  <header class="page-header">
+    <p class="eyebrow">Reform priority {{ priority.id }} of {{ reformAgenda.length }}</p>
+    <h1>{{ priority.title }}</h1>
+    <p class="lede">{{ priority.short }}</p>
+  </header>
+
+  {% if priority.verify %}<p class="notice notice--warn"><strong>Verify before publishing:</strong> {{ priority.verify }}</p>{% endif %}
+  <p class="notice notice--draft"><strong>Stub.</strong> Model language, evidence, fiscal note, and rubric score are in drafting.</p>
+
+  <div class="prose">
+    <h2 id="problem">The problem</h2>
+    <p>{{ priority.problem }}</p>
+
+    <h2 id="current-law">Current Ohio law</h2>
+    {% if priority.statutes.length %}
+      {% set statutes = priority.statutes %}{% include "partials/statutes.njk" %}
+    {% else %}
+      <p>No single statute governs this. The gap is administrative and rule-based. Citations to come.</p>
+    {% endif %}
+
+    <h2 id="proposal">What we propose</h2>
+    <p>{{ priority.proposal }}</p>
+
+    <aside class="callout callout--protections">
+      <p class="callout__title">Protections preserved</p>
+      <p>{{ priority.protections or site.defaultProtections }}</p>
+    </aside>
+
+    <h2 id="objections">Strongest objections, and our response</h2>
+    <p class="todo">To be written. Every priority page states its best counterarguments in their strongest form.</p>
+
+    <h2 id="model-language">Model language</h2>
+    <p class="todo">To be drafted and reviewed by an Ohio practitioner.</p>
+
+    <h2 id="rubric">Rubric score</h2>
+    <p class="todo">Pending. Scored against <a href="/foundations/">Articles 1–7</a>.</p>
+  </div>
+
+  <nav class="pager" aria-label="Other priorities">
+    {% if pagination.href.previous %}<a rel="prev" href="{{ pagination.href.previous }}">← Previous priority</a>{% endif %}
+    {% if pagination.href.next %}<a rel="next" href="{{ pagination.href.next }}">Next priority →</a>{% endif %}
+  </nav>
+</article>

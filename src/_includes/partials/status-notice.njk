@@ -1,0 +1,7 @@
+{% if status == "draft" %}
+  <p class="notice notice--draft" role="note"><strong>Draft.</strong> Visible only in local development. It will not be published.</p>
+{% elif status == "review" %}
+  <p class="notice notice--draft" role="note"><strong>Pending editorial review.</strong> Citations and facts on this page have not completed the fact-check pass. Do not cite yet.</p>
+{% elif status == "archived" %}
+  <p class="notice" role="note"><strong>Archived.</strong> Kept for the record. The law or facts may have changed since publication.</p>
+{% endif %}

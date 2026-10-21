@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: "Ohio law index"
+seoTitle: "Ohio Family Law Statutes & Court Rules in Plain Language"
+summary: "Every Ohio statute and court rule we cite on custody, parenting time, child support, GALs, and protection orders, with plain-language summaries and official links."
+type: page
+permalink: /law/
+---
+<div class="wrap">
+  <header class="page-header">
+    <p class="eyebrow">Ohio law index</p>
+    <h1>Ohio family law statutes and court rules</h1>
+    <p class="lede">{{ summary }}</p>
+    <p class="law-as-of">Summaries are plain-language orientation, not the statute text and not legal advice. Always read the official text.</p>
+  </header>
+
+  <ul class="statute-index">
+    {% for hub in collections.statutes %}
+      {% set info = statuteInfo[hub.slug] %}
+      <li class="statute-index__item">
+        <a class="chip" href="/law/{{ hub.slug }}/">{{ hub.label }}</a>
+        <div>
+          <h2 class="statute-index__title"><a href="/law/{{ hub.slug }}/">{{ info.name if info else hub.label }}</a></h2>
+          {% if info %}<p>{{ info.summary }}</p>{% endif %}
+          <p class="fine-print">{{ hub.items.length }} page{{ "" if hub.items.length == 1 else "s" }} · {{ hub.priorities.length }} reform priorit{{ "y" if hub.priorities.length == 1 else "ies" }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

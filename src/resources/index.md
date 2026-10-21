@@ -1,0 +1,52 @@
+---
+layout: layouts/page.njk
+title: "Resources"
+seoTitle: "Ohio Custody & Child Support Resources and Guides"
+summary: "Plain-language guides, official forms, legal help, and a glossary. These educate and refer; they are not legal advice."
+type: page
+status: published
+---
+
+{% callout "note", "Tested before it ships" %}
+A non-lawyer reads every guide aloud before publication, and every guide carries a "law as of" date.
+{% endcallout %}
+
+<h2 id="guides">Guides</h2>
+
+{% if collections.guides.length %}
+{% for g in collections.guides %}- [{{ g.data.title }}]({{ g.url }}): {{ g.data.summary }}
+{% endfor %}
+{% else %}
+The first guides are in drafting:
+
+1. Establishing parentage and standing in Ohio
+2. Parenting time basics
+3. Shared parenting plan vs. sole custody
+4. How child support is calculated, and how to request modification
+5. Arrears, license suspension, and contempt
+6. Guardians ad litem and evaluators: what they do, and how to complain
+7. Documentation without drama: keeping a clean parenting log
+8. Mediation and early-resolution options
+9. Representing yourself (pro se): realities and limits
+10. Protective orders: if you need one, or if one is filed against you
+11. Grandparent and relative standing
+12. Your mental health during litigation
+{% endif %}
+
+<h2 id="forms">Official forms</h2>
+
+We link to official sources instead of hosting copies that go stale. A county-by-county directory of court forms pages is in progress.
+
+- [Supreme Court of Ohio](https://www.supremecourt.ohio.gov/)
+- [Ohio Revised Code](https://codes.ohio.gov/)
+- [Ohio Department of Job and Family Services: Child Support](https://jfs.ohio.gov/)
+
+<h2 id="directory">Directory: free and low-cost help</h2>
+
+Directory v1 is in progress: statewide legal aid, mediation programs, court self-help centers, county CSEAs, and complaint channels. **No paid placement, ever.**
+Browse [family court resources for all 88 Ohio counties](/resources/counties/), and see the [Ohio law index](/law/) for plain-language summaries of every statute and rule we cite.
+
+
+<h2 id="glossary">Glossary</h2>
+
+Plain-language definitions of custody, parenting-time, support, and protection-order terms: see the [glossary of Ohio family law terms](/resources/glossary/).

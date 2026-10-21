@@ -1,0 +1,46 @@
+{
+  "orc-3109-04": {
+    "name": "Allocation of parental rights and shared parenting",
+    "summary": "How Ohio courts allocate parental rights and responsibilities (custody), approve shared parenting plans, and weigh the best-interest factors in division (F)(1)."
+  },
+  "orc-3109-042": {
+    "name": "Unmarried mother as default custodian",
+    "summary": "Under ORC 3109.042, an unmarried mother is the sole residential parent and legal custodian until a court orders otherwise. What that default means for both parents."
+  },
+  "orc-3109-051": {
+    "name": "Parenting time and companionship",
+    "summary": "Ohio's statute on parenting time for parents and companionship or visitation for relatives, including the factors courts weigh in setting schedules."
+  },
+  "orc-3109-11": {
+    "name": "Relatives' visitation after a parent's death",
+    "summary": "When a parent has died, ORC 3109.11 lets that parent's relatives, including grandparents, ask a court for reasonable companionship or visitation with the child."
+  },
+  "orc-3109-12": {
+    "name": "Relatives' visitation when parents were unmarried",
+    "summary": "ORC 3109.12 covers companionship or visitation for grandparents and other relatives of a child born to an unmarried mother."
+  },
+  "orc-chapter-3119": {
+    "name": "Child support calculation and modification",
+    "summary": "Ohio's child support chapter: the guideline worksheet, income definitions, imputed income, deviations, and how a support order is reviewed or modified."
+  },
+  "orc-2919-21": {
+    "name": "Nonsupport of dependents",
+    "summary": "ORC 2919.21 makes certain failures to provide support a crime, separate from civil child support enforcement by the county CSEA."
+  },
+  "orc-2919-23": {
+    "name": "Interference with custody",
+    "summary": "What counts as interference with custody in Ohio under ORC 2919.23, and why the exchange times in a parenting order matter."
+  },
+  "orc-3113-31": {
+    "name": "Domestic violence civil protection orders",
+    "summary": "How Ohio domestic violence civil protection orders work under ORC 3113.31: emergency ex parte orders, the full hearing, and what an order can require."
+  },
+  "orc-149-43": {
+    "name": "Ohio Public Records Act",
+    "summary": "Ohio's Public Records Act, ORC 149.43: how to request records from public offices. Access to court case records is also governed by Sup.R. 44–47."
+  },
+  "sup-r-48": {
+    "name": "Guardians ad litem",
+    "summary": "The Ohio Rules of Superintendence on guardians ad litem (Sup.R. 48 and its subparts): appointment, training, duties, reports, and complaints."
+  }
+}

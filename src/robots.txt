@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ohio-family.lawyer/sitemap.xml

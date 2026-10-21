@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+title: "Reform agenda"
+seoTitle: "Ohio Family Court Reform Agenda: 12 Priorities"
+summary: "Twelve numbered priorities for Ohio family court reform."
+type: page
+schema: agenda
+---
+<div class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/reform/">Reform</a></li><li aria-current="page">Agenda</li></ol></nav>
+  <header class="page-header">
+    <h1>Reform agenda</h1>
+    <p class="lede">{{ summary }} {{ site.defaultProtections }}</p>
+  </header>
+  <ol class="agenda-list">
+    {% for p in reformAgenda %}
+      <li class="agenda-item">
+        <span class="tile__num">{{ p.id }}</span>
+        <div>
+          <h2 class="agenda-item__title"><a href="/reform/agenda/{{ p.slug }}/">{{ p.title }}</a></h2>
+          <p>{{ p.short }}</p>
+          {% if p.statutes.length %}{% set statutes = p.statutes %}{% include "partials/statutes.njk" %}{% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</div>

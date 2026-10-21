@@ -1,0 +1,5 @@
+<ul class="chip-list" aria-label="Statutes and rules cited">
+  {% for s in statutes %}
+     <li><a class="chip" href="/law/{{ s | statuteSlug }}/" title="{{ s }}: summary, official text, and related coverage">{{ s }}</a></li>
+  {% endfor %}
+</ul>

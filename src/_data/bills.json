@@ -1,0 +1,18 @@
+[
+  {
+    "id": "HB-000",
+    "placeholder": true,
+    "ga": 136,
+    "title": "Placeholder record — replace with a real bill after verification",
+    "sponsors": ["—"],
+    "committee": "House Civil Justice",
+    "status": "In committee",
+    "last_action": "2026-02-10",
+    "position": "watching",
+    "rubric_score": { "art1": 0, "art2": 0, "art3": 0, "art4": 0, "art5": 0, "art6": 0, "art7": 0 },
+    "summary": "This record exists only to exercise the bill tracker template. Do not publish it. Positions are set by the published rubric (see /foundations/).",
+    "text_url": "https://www.legislature.ohio.gov/",
+    "brief": "",
+    "priorities": [2]
+  }
+]

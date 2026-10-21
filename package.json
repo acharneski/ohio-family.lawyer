@@ -1,0 +1,33 @@
+{
+  "name": "ohio-family-lawyer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20", "pnpm": ">=9" },
+  "scripts": {
+    "dev": "eleventy --serve --quiet",
+     "build": "eleventy && node scripts/og-images.js && pagefind --site _site",
+    "preview": "pnpm dlx serve _site",
+    "validate": "node scripts/validate-frontmatter.js",
+    "links": "node scripts/check-links.js",
+     "lint": "eslint src/assets/js scripts lib eleventy.config.js && stylelint \"src/assets/css/**/*.css\"",
+    "format": "prettier --write .",
+    "test": "pnpm validate && pnpm lint && pnpm build"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.0",
+    "@eslint/js": "^9.0.0",
+     "@resvg/resvg-js": "^2.6.0",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^9.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "pagefind": "^1.0.0",
+    "prettier": "^3.0.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}

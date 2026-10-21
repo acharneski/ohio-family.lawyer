@@ -1,0 +1,26 @@
+<p class="article__kicker">
+  <span class="badge badge--{{ type }}">{{ site.types[type] }}</span>
+  {% if kind %}<span class="kicker-text">{{ kind | capitalize }}</span>{% endif %}
+  {% if series %}<span class="kicker-text">Series: {{ series }}</span>{% endif %}
+</p>
+<h1 class="article__title">{{ title }}</h1>
+{% if subtitle %}<p class="article__subtitle">{{ subtitle }}</p>{% endif %}
+{% if summary and type != "essay" %}<p class="lede">{{ summary }}</p>{% endif %}
+
+<p class="meta-line">
+  {% if author %}<span>By {{ author }}</span>{% endif %}
+  <span>Published <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time></span>
+  {% if updated and (updated | isoDate) != (page.date | isoDate) %}
+    <span>Updated <time datetime="{{ updated | isoDate }}">{{ updated | readableDate }}</time></span>
+  {% endif %}
+  {% if type == "essay" %}<span>{{ content | readingTime }}</span>{% endif %}
+</p>
+
+{% if law_as_of %}
+  <p class="law-as-of">
+    <strong>Law as of <time datetime="{{ law_as_of | isoDate }}">{{ law_as_of | readableDate }}</time>.</strong>
+    Statutes and rules change. Verify current law before relying on anything here.
+  </p>
+{% endif %}
+
+{% if statutes and statutes.length %}{% include "partials/statutes.njk" %}{% endif %}

@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+---
+<div class="reading-progress" aria-hidden="true"><div class="reading-progress__bar" data-reading-progress></div></div>
+
+<article class="wrap article article--essay">
+  <header class="article__header">
+    {% include "partials/article-meta.njk" %}
+  </header>
+
+  {% include "partials/status-notice.njk" %}
+
+  {% set headings = content | toc if toc else [] %}
+  <div class="article__body{% if headings.length %} has-toc{% endif %}">
+    {% if headings.length %}
+      <nav class="toc" aria-label="Contents" data-toc>
+        <p class="toc__heading">Contents</p>
+        <ol class="toc__list">
+          {% for h in headings %}
+            <li><a class="toc__link" href="#{{ h.id }}">{{ h.text }}</a></li>
+          {% endfor %}
+        </ol>
+      </nav>
+    {% endif %}
+
+    <div class="prose">
+      {{ content | safe }}
+    </div>
+  </div>
+
+  {% if disclaimer == "clinical" %}
+    <aside class="callout callout--clinical">
+      <p class="callout__title">Not clinical advice</p>
+      <p>This essay is a structural analysis, not medical or psychological advice. If you are struggling, call or text <a href="tel:988">988</a>, or contact a licensed professional.</p>
+    </aside>
+  {% endif %}
+
+  {% include "partials/reform-hooks.njk" %}
+   {% include "partials/related.njk" %}
+  {% include "partials/changelog.njk" %}
+
+  <p class="article__tools">
+    <button type="button" class="button button--small" data-copy-link hidden>Copy link</button>
+    <a class="button button--small" href="/corrections/">Report an error</a>
+  </p>
+</article>

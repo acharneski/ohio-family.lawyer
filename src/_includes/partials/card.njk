@@ -1,0 +1,12 @@
+{% macro card(item, featured=false) %}
+  <article class="card card--{{ item.data.type }}{% if featured %} card--featured{% endif %}">
+    <p class="card__meta">
+      <span class="badge badge--{{ item.data.type }}">{{ site.types[item.data.type] }}</span>
+      <time datetime="{{ item.date | isoDate }}">{{ item.date | readableDate }}</time>
+      {% if item.data.status == "review" %}<span class="pill pill--muted">In review</span>{% endif %}
+    </p>
+    <h3 class="card__title"><a href="{{ item.url }}">{{ item.data.title }}</a></h3>
+    {% if item.data.subtitle and featured %}<p class="card__subtitle">{{ item.data.subtitle }}</p>{% endif %}
+    {% if item.data.summary %}<p class="card__summary">{{ item.data.summary }}</p>{% endif %}
+  </article>
+{% endmacro %}

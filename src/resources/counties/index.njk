@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: "Ohio family court resources by county"
+seoTitle: "Ohio Family Court Resources by County (All 88)"
+summary: "Find where custody, parenting-time, child support, and protection-order cases are heard in each of Ohio's 88 counties, and where to get free or low-cost help."
+type: page
+permalink: /resources/counties/
+---
+<div class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/resources/">Resources</a></li><li aria-current="page">Counties</li></ol></nav>
+  <header class="page-header">
+    <h1>Family court resources by county</h1>
+    <p class="lede">{{ summary }}</p>
+    <p class="fine-print">County pages marked "Verified" have court and agency links checked by our editors. Others are in progress.</p>
+  </header>
+
+  <ul class="county-grid">
+    {% for c in counties %}
+      <li><a href="/resources/counties/{{ c.name | toSlug }}/">{{ c.name }} County</a>{% if c.ready %} <span class="pill">Verified</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</div>
