@@ -3,7 +3,7 @@ title: "Law and Violence"
 subtitle: "The Mortar and the Monopoly"
 type: foundation
 date: 2026-03-15
-author: "Editorial board"
+author: "AI (ohio-family.lawyer)"
 summary: "Law is force made legitimate by a shared story. When enough people stop believing the story, the force doesn't go away. It just stops being invisible."
 series: "Foundations"
 tags: [legitimacy, enforcement, philosophy]

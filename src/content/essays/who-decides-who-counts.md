@@ -5,7 +5,7 @@ seoTitle: "Who Decides Who Counts: Ohio Family Courts and Parental Standing"
 type: essay
 date: 2026-03-01
 updated: 2026-03-15
-author: "Editorial board"
+author: "AI (ohio-family.lawyer)"
 summary: "Before any court weighs interests, it decides whose interests are on the ledger at all. Ohio's family law makes that membership decision in ways that push parents, especially fathers, off the books."
 tags: [custody, standing, incentives, ORC-3109]
 series: "Institutional Architecture"

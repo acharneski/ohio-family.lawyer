@@ -1,0 +1,170 @@
+/*
+ * themes.css: every color on the site, and only colors.
+ *
+ * Contract (for humans and for theme-generation scripts):
+ *
+ * 1. BASE tokens are the only values a theme sets. They are listed, in order,
+ *    in the default "ledger" block below. A theme that sets all of them is complete.
+ * 2. DERIVED tokens (near the bottom) are computed from base tokens with
+ *    color-mix(). Themes never set them.
+ * 3. Base, components, and layouts use tokens only. No raw color values exist
+ *    outside this file (print.css excepted: paper is paper).
+ * 4. Select a theme with <html data-theme="name">. Without data-theme, the
+ *    ledger / ledger-night pair follows prefers-color-scheme.
+ *
+ * Adding a theme: append a block at the END of this file.
+ *
+ *   [data-theme="name"] {
+ *     color-scheme: light;  (or dark)
+ *     --paper: …;  (every base token, same order as below)
+ *   }
+ */
+
+/* Theme: ledger (light, default) */
+:root {
+  color-scheme: light;
+
+  /* Paper: the page, recessed sections, raised surfaces (cards, panels) */
+  --paper: #f3ede1;
+  --paper-deep: #e8dfcd;
+  --paper-raised: #fbf8f2;
+
+  /* Ink: body text, secondary text, captions and metadata */
+  --ink: #1d1a16;
+  --ink-soft: #3b362f;
+  --ink-muted: #6b6356;
+
+  /* Hairlines and borders */
+  --rule: #d5c9b3;
+
+  /* Accent: verdigris. The brand color: primary buttons, links, emphasis */
+  --accent: #1f4e5f;
+  --accent-ink: #f7f2e7;
+
+  /* Accent 2: sealing wax. Seals, stamps, section marks, margin lines */
+  --accent-2: #8b2e26;
+  --accent-2-ink: #faeee0;
+
+  /* Gilt: highlights, ornaments, headings on night panels */
+  --gilt: #a97c26;
+
+  /* Interaction */
+  --link: #1b5266;
+  --focus: #c98a1b;
+
+  /* Caution: verify notices, drafts, law-as-of slips */
+  --warn-bg: #f6e5b8;
+  --warn-ink: #4c3805;
+
+  /* Night: crisis banner, footer, reform-hook panels */
+  --night: #182221;
+  --night-ink: #ebe3d1;
+  --night-muted: #a59d89;
+
+  /* Content-type badges (no partisan red/blue pairing) */
+  --badge-news: #4a5663;
+  --badge-essay: #1f4e5f;
+  --badge-brief: #56602f;
+  --badge-guide: #84561f;
+  --badge-foundation: #5c4766;
+  --badge-page: #6b6356;
+  --badge-ink: #fbf6ec;
+
+  /* Depth: letterpress offset shadow, soft shadow tone */
+  --press: #1d1a16;
+  --shadow-tone: #3b2a12;
+
+  /* Paper grain overlay */
+  --grain-opacity: 0.32;
+  --grain-filter: none;
+}
+
+/* Theme: ledger-night (dark, follows the OS when no data-theme is set) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    /* Paper */
+    --paper: #141310;
+    --paper-deep: #1b1915;
+    --paper-raised: #221f1a;
+
+    /* Ink */
+    --ink: #ede5d3;
+    --ink-soft: #d3c9b4;
+    --ink-muted: #9e957f;
+
+    /* Hairlines */
+    --rule: #3a352b;
+
+    /* Accent */
+    --accent: #73b5ae;
+    --accent-ink: #0e1716;
+
+    /* Accent 2 */
+    --accent-2: #d9705f;
+    --accent-2-ink: #1d0c08;
+
+    /* Gilt */
+    --gilt: #d9b25c;
+
+    /* Interaction */
+    --link: #8fc8c1;
+    --focus: #e7a93a;
+
+    /* Caution */
+    --warn-bg: #352a10;
+    --warn-ink: #f1dba0;
+
+    /* Night */
+    --night: #0b0c0a;
+    --night-ink: #e6ddcb;
+    --night-muted: #958c79;
+
+    /* Badges */
+    --badge-news: #66737f;
+    --badge-essay: #2d6f80;
+    --badge-brief: #6c7642;
+    --badge-guide: #9d6c32;
+    --badge-foundation: #7a6385;
+    --badge-page: #776e60;
+    --badge-ink: #fbf6ec;
+
+    /* Depth */
+    --press: #000;
+    --shadow-tone: #000;
+
+    /* Grain */
+    --grain-opacity: 0.16;
+    --grain-filter: invert(1);
+  }
+}
+
+/* Derived tokens. Computed from whichever theme is active. Never set these in a theme. */
+:root,
+[data-theme] {
+  --bg: var(--paper);
+  --bg-tint: var(--paper-deep);
+  --surface: var(--paper-raised);
+  --muted: var(--ink-muted);
+  --border: var(--rule);
+  --rule-strong: color-mix(in oklab, var(--ink) 45%, var(--rule));
+  --rule-faint: color-mix(in oklab, var(--rule) 55%, transparent);
+  --accent-strong: color-mix(in oklab, var(--accent) 75%, var(--ink));
+  --accent-soft: color-mix(in oklab, var(--accent) 11%, var(--paper-raised));
+  --accent-2-soft: color-mix(in oklab, var(--accent-2) 9%, var(--paper-raised));
+  --accent-2-deep: color-mix(in oklab, var(--accent-2) 72%, var(--ink));
+  --accent-2-light: color-mix(in oklab, var(--accent-2) 72%, var(--paper-raised));
+  --gilt-soft: color-mix(in oklab, var(--gilt) 22%, var(--paper-raised));
+  --link-underline: color-mix(in oklab, var(--link) 38%, transparent);
+  --selection-bg: color-mix(in oklab, var(--gilt) 38%, var(--paper));
+  --night-rule: color-mix(in oklab, var(--night-ink) 16%, transparent);
+  --shadow-soft:
+    0 1px 1px color-mix(in srgb, var(--shadow-tone) 8%, transparent),
+    0 10px 24px -14px color-mix(in srgb, var(--shadow-tone) 35%, transparent);
+  --shadow-lift:
+    0 2px 2px color-mix(in srgb, var(--shadow-tone) 10%, transparent),
+    0 26px 44px -20px color-mix(in srgb, var(--shadow-tone) 50%, transparent);
+}
+
+/* Additional themes: append below this line. */

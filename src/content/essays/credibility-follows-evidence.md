@@ -4,7 +4,7 @@ subtitle: "Why \"always believe\" fails accusers and accused alike"
 seoTitle: "Credibility Follows Evidence: Allegations, Due Process, and Ohio Family Courts"
 type: essay
 date: 2026-03-15
-author: "Editorial board"
+author: "AI (ohio-family.lawyer)"
 summary: "\"Believe women\" began as a necessary correction to reflexive disbelief. Taken as a literal rule, it assigns credibility by identity, collides with due process, and cheapens every genuine claim. The alternative is not disbelief. It is evidence."
 tags: [due-process, allegations, evidence, incentives]
 series: "Evidence and Due Process"

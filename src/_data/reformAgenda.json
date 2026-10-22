@@ -108,5 +108,27 @@
     "problem": "County-level data on custody outcomes, GAL appointments, and contempt filings is hard to obtain and harder to compare.",
     "proposal": "Publish standardized county-level court operations data and make it routinely available under the Public Records Act.",
     "statutes": ["ORC 149.43"]
-  }
+   },
+   {
+     "id": 13,
+     "slug": "supervision-with-an-exit",
+     "title": "Supervision with an exit",
+     "short": "Supervised parenting time with a review date, written step-down criteria, and costs that don't end contact when the money runs out.",
+     "problem": "Supervised parenting time is often paid for by the supervised parent, has no end date, and has no stated criteria for stepping down. When the parent can't keep paying, contact stops, even though no court found that it should. Meanwhile the supervised parent is monitored by paid, reporting professionals, and the other parent's obligations under the same order are monitored by no one.",
+     "proposal": "Require every supervised-time order to state its reason, its review date (no more than 90 days out), and the specific criteria for moving to less restrictive time. Require findings to continue supervision past review. Provide sliding-scale or court-funded supervision so that contact never ends only because a parent can't afford it. Track both parents' compliance with the order with equal rigor.",
+     "protections": "Supervision stays available, and stays in place, wherever a court finds a real risk to the child. This proposal requires that the risk be stated and reviewed. It does not remove supervision where danger has been shown.",
+     "statutes": ["ORC 3109.051", "ORC 3109.04"],
+     "verify": "Verify how Ohio counties currently fund supervised visitation centers, and whether any local rules already require review dates for supervised orders, before describing current practice."
+   },
+   {
+     "id": 14,
+     "slug": "treatment-is-not-testimony",
+     "title": "Treatment is not testimony",
+     "short": "Seeking mental-health or substance treatment, or not seeking it, is not evidence of unfitness without independent findings.",
+     "problem": "In a contested case, a parent's therapy and treatment records can be ordered disclosed, reviewed by court appointees, and tied to progress toward parenting time. A parent who doesn't seek treatment can be described as in denial. Both choices can be counted against the parent, so the rational move is often to avoid care, which is the worst outcome for the parent and the child.",
+     "proposal": "Require a specific showing of relevance to the child's safety before treatment records are disclosed, with in camera review and disclosure limited to what bears on that question. Bar adverse inferences from either seeking or declining treatment without independent evidence of risk. Require that appointees who receive records use them only for the stated purpose.",
+     "protections": "Courts keep full authority to consider a parent's mental health and substance use where independent evidence shows they bear on a child's safety. This proposal limits fishing expeditions and penalty-by-inference. It does not hide real danger.",
+     "statutes": ["ORC 2317.02", "ORC 3109.04"],
+     "verify": "Verify how Ohio courts currently treat physician and counselor privilege when mental health is raised in a custody case, including waiver doctrine, before describing current law."
+   }
 ]

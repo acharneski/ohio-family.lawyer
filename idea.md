@@ -5,6 +5,7 @@
 
 Status: planning draft v1
 Stack: static site, `pnpm`, ES6 modules (no client framework)
+Authorship: AI. Written by AI, not reviewed by humans, and disclosed on every page (see §1.5).
 
 ---
 
@@ -39,6 +40,14 @@ The site's intellectual spine, which every section should be able to point back 
 5. **Evidence over identity.** Credibility should be proportional to evidence, never assigned by class (`The Hypocrisy of "Always Believe Women"`).
 6. **Measure outcomes.** Courts track throughput and collections, not whether children and families fare better five or ten years later.
 7. **Legitimacy is the real infrastructure.** Coercion works only while people experience it as theirs (`Law and Violence: The Mortar and the Monopoly`). Reform is therefore a legitimacy project, not just a statute-tweaking one.
+### 1.5 Authorship: this is AI
+Every word on this site is written by AI. It is not "AI-assisted," and it is not "reviewed by our editorial team." The site does not promise that a fact-checker, clinician, or attorney read a page before it shipped, because none did. If a reader wants to dismiss it as slop, that is their call.
+What the site promises instead is what anyone can check:
+- Every legal claim links to a primary source (ORC, court rules, case law, agency data).
+- Every page carries a `law_as_of` date and a `generated_by` disclosure.
+- Every error can be filed as a public issue and fixed in the open, with a dated change-log.
+Judge it by its citations, not its author.
+This is scalable cognition pointed at a system that counts on nobody having the time, money, or stamina to read everything it does. Now something does. It gives voice to the voiceless, illuminates the darkness, and challenges injustice with the intent to win.
 
 ---
 
@@ -60,24 +69,23 @@ Design implication: **plain-language by default, with depth one click away.** An
 
 ## 3. Editorial Principles and Guardrails
 
-These keep the site credible with legislators and the press, which is what a reform site depends on.
+These keep the site credible with legislators and the press. Credibility here comes from what a reader can check, not from who (or what) wrote it.
 
 1. **Cite everything checkable.** Every statutory claim links to the Ohio Revised Code (codes.ohio.gov), Ohio Supreme Court Rules (Superintendence Rules, Rules of Civil/Juvenile Procedure), or primary case law.
-2. **Fact-check pass before publishing.** Essays go through `docs/editorial-checklist.md`: claims inventory, source links, date-stamping of law ("as of YYYY-MM-DD"), and a **"verify current status"** flag on anything legislative.
+2. **Automated checks before publishing.** Every piece runs through `docs/editorial-checklist.md` as an AI and scripted pass: claims inventory, source links, date-stamping of law ("as of YYYY-MM-DD"), and a **"verify current status"** flag on anything legislative. No human fact-check is promised, and none is implied.
 3. **Separate argument from reporting.** News items are labeled `news`, essays `essay`, briefs `brief`, and guides `guide`, each with a visible badge. Essays may argue. News and briefs may not editorialize.
 4. **Steelman the opposition.** Each policy brief includes "Strongest objections" and a response. This mirrors the "Strongest Objections" section of the existing Ohio family court essay and should become a house style.
 5. **Protective-order and abuse safeguards are explicit and permanent.** Every reform proposal states how real abuse, neglect, and DV will still be caught and handled. Proposals that weaken protection are out of scope.
 6. **Count all stakeholders.** Content should speak about *parents*, with fathers as a documented, specific case. It should not cast one sex as the villain.
 7. **No doxxing and no case-specific accusations about named private individuals.** Litigant stories are anonymized and published only with written consent. Judges and officials are criticized for public acts, rules, and statistics, not private characteristics.
 8. **No legal advice.** Resources educate and refer. They do not tell a reader what to file in their own case.
-9. **Corrections policy.** A visible `/corrections/` page and a dated change-log on every essay.
+9. **Corrections policy.** A visible `/corrections/` page and a dated change-log on every essay. Because no human reviews a page before it is published, public corrections afterward are the review: anyone can file one as an issue.
 10. **Tone.** Firm, precise, unsentimental. Rhetorical heat is allowed in essays but not in briefs or news.
 
 ### 3.1 Editorial notes on existing essays
 
 - `genocide_of_fathers.md` is a strong draft. Retitle for credibility and reach (candidate: *"Who Decides Who Counts: Ohio's Family Courts and the Architecture of Managed Persons"*, which is already the in-document H1). Keep the slavery-structure argument, but front-load the "word must be earned" framing, which already does this well. Add footnotes for: ORC §§ 2919.23, 3109.04(F)(1), 3109.042, 3119, 2919.21, Sup.R. 48, and Title IV-D incentive funding.
 - `Hypocrisy of "Always Believe Women"` has statements that need sources (documented pattern in custody/Title IX/HR; "well-documented" political-science claims). Add citations or soften. Its header metadata (author "Editorial Staff", date "January 2024", fake "Further Reading" cards, "© 2024 Longform Essays") are template placeholders and must be removed or replaced.
-- `The Function, Not the Failure` makes clinical claims (symptom-as-function). Have a licensed clinician review it, and add a "not clinical advice" box and crisis resources (988) in the page footer.
 - `The Ego Manifesto`, `The Mortar Problem`, and `Law and Violence` are philosophy and political theory. They are on-theme only loosely (Law and Violence is closest). Publish them under a clearly separate **"Foundations"** or **"Philosophy"** shelf so they don't dilute the practical credibility of the policy work, and keep them off the home page's primary nav.
 - `least_entropy_morality.md` (*The Alignment Manifesto*) becomes the **framework page**: "How we evaluate institutions." Reuse its Article 1–7 as the site's evaluation rubric (see §6.4).
 
@@ -114,7 +122,7 @@ These keep the site credible with legislators and the press, which is what a ref
 ├── act/                       Action alerts, call scripts, testimony templates, who-to-contact
 ├── coalition/                 Partner orgs, endorsements, join form
 ├── foundations/               Framework essay + philosophy shelf
-├── about/                     Mission, team, funding, editorial standards
+├── about/                     Mission, AI authorship, funding, editorial standards
 ├── press/
 ├── corrections/
 ├── support/                   Peer support listings, crisis resources, "this is not therapy"
@@ -166,7 +174,7 @@ These keep the site credible with legislators and the press, which is what a ref
 
 ### 5.3 Resources
 
-Plain-language and **tested** (a non-lawyer reads every guide aloud before it ships).
+Plain-language, with automated readability scoring (target: 8th-grade reading level) and every legal statement linked to its source.
 
 Initial guide list:
 
@@ -282,10 +290,10 @@ Each brief and bill page includes a short "rubric score" with reasoning, which g
 
 ### 6.7 Legal and organizational structure for lobbying
 
-> This section needs input from an Ohio attorney and CPA before launch. It is not legal advice.
+> This section is AI-written and has not been reviewed by counsel. It is not legal advice. The statutes below apply whether or not anyone reviews them, so read them directly.
 
-- **Ohio lobbying registration:** Ohio law (ORC 101.70–101.79; Joint Legislative Ethics Committee) requires registration and reporting for legislative agents above thresholds, and employers of lobbyists must register. Volunteer grassroots activity differs from paid lobbying. Review before sending any organized lobbying campaign.
 - **Tax status options:**
+- **Ohio lobbying registration:** Ohio law (ORC 101.70–101.79; Joint Legislative Ethics Committee) requires registration and reporting for legislative agents above thresholds, and employers of lobbyists must register. Volunteer grassroots activity differs from paid lobbying. Check the current JLEC thresholds against the statute before sending any organized lobbying campaign.
   - 501(c)(3): limited lobbying (substantial-part test or 501(h) election), no candidate endorsement.
   - 501(c)(4): unlimited issue lobbying, no tax-deductible donations.
   - Common pairing: a (c)(3) for education and research and a (c)(4) for lobbying, with separate books.
@@ -446,7 +454,7 @@ statutes: ["ORC 3109.04", "ORC 3109.042", "ORC 3119", "Sup.R. 48"]
 law_as_of: 2026-03-01     # required on anything citing law
 reform_priorities: [1, 2, 3]   # links to /reform/agenda items
 status: published      # draft | review | published | archived
-reviewed_by: "Fact-check initials/date"
+generated_by: "AI model and date"   # disclosed on the page
 disclaimer: standard   # standard | clinical | none
 toc: true
 reading_time: auto
@@ -577,7 +585,6 @@ export function initReadingProgress(selector = '[data-reading-progress]') {
 
 ### 7.11 Quality gates
 
-- Front-matter validation (required fields, valid `type`, `law_as_of` present when `statutes` is non-empty).
 - Link check (internal and external, with allowlist and retry).
 - Spell check and style lint for prose (e.g., `cspell` with a legal-term dictionary).
 - Accessibility check (`pa11y-ci` or axe in CI on key templates).
@@ -597,12 +604,11 @@ export function initReadingProgress(selector = '[data-reading-progress]') {
 
 ### Phase 1: Launch (weeks 3–6)
 
-- Convert and publish the first essay set: *Who Decides Who Counts*, *Always Believe Women* (after sourcing pass), *The Function, Not the Failure* (after clinical review), plus the framework essay as `/foundations/`.
 - Write **5 core guides** (standing and parentage, child support basics, parenting time, GALs and evaluators, pro se basics).
 - Publish the **reform agenda** (12 priorities, each as a stub with citations), the first **3 policy briefs**, and the **bill tracker** (manual entry).
 - News: 6–8 seeded items and the RSS feed.
 - Newsletter signup, search, sitemap, OG images.
-- Soft launch to a small group of reviewers, including at least one Ohio family-law practitioner and one DV-advocacy reviewer.
+- Launch publicly. Readers are the review layer: corrections arrive as GitHub issues and are fixed in the open.
 
 ### Phase 2: Credibility build (months 2–4)
 
@@ -610,7 +616,6 @@ export function initReadingProgress(selector = '[data-reading-progress]') {
 - Public-records requests for the Transparency Index (first 10 counties) and a methodology page.
 - Action toolkit (testimony templates, scripts, meeting guide).
 - Press page and outreach to Ohio journalists.
-- Legal review of the lobbying structure (§6.7) and entity formation if proceeding.
 - Weekly digest cadence established.
 
 ### Phase 3: Organizing (months 4–8)
@@ -635,7 +640,7 @@ export function initReadingProgress(selector = '[data-reading-progress]') {
 
 **Reach:** newsletter subscribers, RSS subscribers, organic search impressions (via Search Console only), and press mentions.
 
-**Credibility:** citations of site briefs by legislators, committee testimony delivered or cited, number of primary sources per essay, corrections issued (and speed), and reviewer participation from practitioners.
+**Credibility:** citations of site briefs by legislators, committee testimony delivered or cited, number of primary sources per essay, corrections issued (and speed), and corrections contributed by readers.
 
 **Action:** testimony submitted, legislator meetings held, coalition partners signed, public-records requests filed and answered.
 
@@ -657,13 +662,14 @@ Avoid vanity metrics. Never track individual visitors.
 
 ---
 
-## 11. Legal Risk Register (for counsel review)
+## 11. Legal Risk Register
 
 | Risk | Mitigation |
 | :-- | :-- |
-| Unauthorized practice of law (UPL) | No individualized advice. Prominent disclaimer. Educational framing. Counsel review of guides. |
+| Unauthorized practice of law (UPL) | No individualized advice. Prominent disclaimer. Educational framing. |
 | `.lawyer` implying a legal practice; attorney advertising rules (Ohio Prof.Cond.R. 7.1 etc.) if any operator is a lawyer | Clear "this is not a law firm" statement. Separate any practice from the advocacy site. Check registry and bar guidance. |
-| Defamation | No factual claims about named individuals without documentary support. Review process. Corrections policy. |
+| Defamation | No factual claims about named individuals without linked documentary support. Corrections policy. |
+| AI error or fabricated citation | Every claim links to a primary source. Link check fails the build on dead sources. AI authorship disclosed on every page. Public corrections with a change-log. |
 | Lobbying law compliance (JLEC) and tax-exempt limits | See §6.7. |
 | Publishing litigants' case details | Consent, anonymization, no active-case specifics that could prejudice a pending matter. |
 | Copyright (forms, statutes, quotes) | Link to official sources, quote with attribution, and store only public-domain statute text with source links. |
@@ -678,7 +684,7 @@ Avoid vanity metrics. Never track individual visitors.
 3. **Name and framing:** "ohio-family.lawyer" is the domain, but the public brand could differ (e.g., *Ohio Family Court Reform*). Consider a brand that signals inclusive stakes ("every parent, every child").
 4. **Where do the philosophy essays live?** Same site under `/foundations/`, or a separate site. Recommended: same site, clearly separated, so the framework stays linkable without crowding the practical content.
 5. **Scope of national content:** keep Ohio-first. Link outward for other states.
-6. **Voice:** one institutional voice, or signed individual essays? (Recommended: signed essays, institutional briefs.)
+6. **Voice:** settled. The site is AI-authored and says so. Essays may argue in a distinct voice. Briefs stay institutional.
 7. **Status of shared-parenting legislation in Ohio:** confirm the current state before writing reform copy that presumes it is pending or absent.
 8. **Funding model:** donations, grants, memberships, or volunteer-only.
 9. **Peer support:** whether to ever host community features, and what safeguards would be required.
@@ -745,7 +751,7 @@ status: published
 4. Footnote every statutory and empirical claim.
 5. Add a "What this essay does not claim" box and a "Strongest objections" section where missing.
 6. Add a reform-hooks section linking to `/reform/agenda/` items.
-7. Add `law_as_of`, `reviewed_by`, and a change-log.
+7. Add `law_as_of`, `generated_by`, and a change-log.
 8. Run spellcheck, link check, and accessibility check.
 
 ### D. Initial launch content checklist
@@ -760,7 +766,7 @@ status: published
 - [ ] Directory v1 (statewide legal aid, mediation, crisis resources)
 - [ ] Newsletter signup, RSS, search, sitemap
 - [ ] CI and deploy pipeline
-- [ ] Practitioner and DV-advocate review completed
+- [ ] AI-authorship disclosure in the footer and on `/about/`
 
 ### E. Statute and rule quick-reference (verify before publishing)
 
@@ -774,3 +780,8 @@ status: published
 - **ORC §§ 101.70–101.79**: legislative agent and lobbying provisions.
 - **Ohio Superintendence Rule 48**: guardians ad litem.
 - **Title IV-D, Social Security Act**: federal child support enforcement and incentive funding.
+- **Not human-reviewed, and not pretending otherwise.** No editor, fact-checker, clinician, or attorney signs off before anything is published. The site is AI-authored and says so (see §1.5).
+- `The Function, Not the Failure` makes clinical claims (symptom-as-function). Source each one to published clinical literature or label it plainly as argument, and add a "not clinical advice" box and crisis resources (988) in the page footer.
+- Front-matter validation (required fields, valid `type`, `generated_by` present, `law_as_of` present when `statutes` is non-empty).
+- Convert and publish the first essay set: *Who Decides Who Counts*, *Always Believe Women* (after automated sourcing pass), *The Function, Not the Failure* (with clinical claims sourced or labeled as argument), plus the framework essay as `/foundations/`.
+- Decide the lobbying structure (§6.7), checked against the statutes, and form an entity if proceeding.

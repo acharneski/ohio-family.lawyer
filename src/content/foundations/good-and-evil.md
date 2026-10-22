@@ -3,7 +3,7 @@ title: "Good and Evil"
 subtitle: "A structural essay"
 type: foundation
 date: 2026-03-15
-author: "Editorial board"
+author: "AI (ohio-family.lawyer)"
 summary: "Good and evil are old words for an old problem: how to live together when living together is not optional. Read structurally, they name a durable split between thought that hides power and thought that makes it visible."
 series: "Foundations"
 tags: [legitimacy, philosophy, power]

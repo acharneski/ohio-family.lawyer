@@ -3,7 +3,7 @@
     <p class="card__meta">
       <span class="badge badge--{{ item.data.type }}">{{ site.types[item.data.type] }}</span>
       <time datetime="{{ item.date | isoDate }}">{{ item.date | readableDate }}</time>
-      {% if item.data.status == "review" %}<span class="pill pill--muted">In review</span>{% endif %}
+       {% if item.data.status == "review" %}<span class="pill pill--muted">Unverified</span>{% endif %}
     </p>
     <h3 class="card__title"><a href="{{ item.url }}">{{ item.data.title }}</a></h3>
     {% if item.data.subtitle and featured %}<p class="card__subtitle">{{ item.data.subtitle }}</p>{% endif %}

@@ -1,42 +1,22 @@
-/* Design tokens: one set, light default, dark via prefers-color-scheme. No web fonts. */
+/* Design tokens: everything except color (colors live in themes.css). No web fonts. */
 :root {
-  --bg: #faf8f4;
-  --bg-tint: #f2eee6;
-  --surface: #fff;
-  --ink: #1c1b19;
-  --ink-soft: #3d3b37;
-  --muted: #6a665e;
-  --border: #e1dbcf;
-  --accent: #1f4e5f;
-  --accent-strong: #163a47;
-  --accent-ink: #fff;
-  --accent-soft: #e4edef;
-  --link: #1f4e5f;
-  --focus: #c7871b;
-  --warn-bg: #fff3d6;
-  --warn-ink: #5a4100;
-  --crisis-bg: #1c1b19;
-  --crisis-ink: #faf8f4;
+  /* Type families: system fonts only, chosen for character where they exist */
+  --font-serif: "Iowan Old Style", Charter, "Bitstream Charter", "Sitka Text", Cambria, "Palatino Linotype", Palatino, Georgia, serif;
+  --font-display: "Hoefler Text", "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-sans: "Avenir Next", Avenir, "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
 
-  /* Type badges: muted and distinct, no partisan red/blue pairing */
-  --badge-news: #4a5560;
-  --badge-essay: #1f4e5f;
-  --badge-brief: #5b6236;
-  --badge-guide: #7a5a2b;
-  --badge-foundation: #5d4a63;
-  --badge-page: #6a665e;
-
-  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-
+  /* Fluid type scale */
+  --step--2: 0.78rem;
   --step--1: 0.875rem;
-  --step-0: 1.0625rem;
-  --step-1: 1.25rem;
-  --step-2: 1.5rem;
-  --step-3: 1.875rem;
-  --step-4: clamp(2rem, 4.5vw, 2.75rem);
+  --step-0: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-1: clamp(1.25rem, 1.15rem + 0.4vw, 1.45rem);
+  --step-2: clamp(1.5rem, 1.3rem + 0.8vw, 1.95rem);
+  --step-3: clamp(1.9rem, 1.55rem + 1.4vw, 2.6rem);
+  --step-4: clamp(2.3rem, 1.7rem + 2.6vw, 3.6rem);
+  --step-5: clamp(2.6rem, 1.6rem + 4vw, 4.6rem);
 
+  /* Space */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -44,32 +24,16 @@
   --space-5: 1.5rem;
   --space-6: 2.5rem;
   --space-7: 4rem;
+  --space-8: 6rem;
 
-  --gutter: 1.25rem;
-  --measure: 68ch;
-  --wrap: 72rem;
-  --radius: 6px;
-  --shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 4px 14px rgb(0 0 0 / 5%);
-}
+  /* Layout */
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  --measure: 66ch;
+  --wrap: 76rem;
+  --radius-sm: 2px;
+  --radius: 4px;
+  --radius-lg: 10px;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #151514;
-    --bg-tint: #1d1c1a;
-    --surface: #201f1d;
-    --ink: #ece8df;
-    --ink-soft: #d0cbc0;
-    --muted: #a29d92;
-    --border: #34322e;
-    --accent: #7fb3c4;
-    --accent-strong: #a3cad6;
-    --accent-ink: #111;
-    --accent-soft: #1f3138;
-    --link: #8fc0d0;
-    --warn-bg: #3a2f12;
-    --warn-ink: #f3dfa6;
-    --crisis-bg: #0b0b0a;
-    --badge-essay: #2f6d82;
-    --shadow: none;
-  }
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
 }

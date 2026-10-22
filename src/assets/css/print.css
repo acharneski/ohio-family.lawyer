@@ -1,4 +1,4 @@
-/* Briefs and guides print cleanly to PDF. */
+/* Briefs and guides print cleanly to PDF. Raw colors are intentional here: paper is paper. */
 .crisis-banner,
 .disclaimer-banner,
 .site-header,
@@ -10,7 +10,8 @@
 .article__tools,
 .button,
 .pager,
-.safety-strip {
+.safety-strip,
+.seal {
   display: none !important;
 }
 
@@ -18,6 +19,21 @@ body {
   background: #fff;
   color: #000;
   font-size: 11pt;
+}
+
+body::before,
+.site-footer::before,
+.site-footer::after,
+.hero::before,
+.card--featured::after {
+  display: none;
+}
+
+.hero,
+.card--featured,
+.ledger {
+  background: none;
+  transform: none;
 }
 
 .wrap,
@@ -48,7 +64,19 @@ h3 {
   box-shadow: none;
 }
 
+.reform-hooks,
 .site-footer {
   margin-top: 2rem;
   background: none;
+  color: #000;
+  box-shadow: none;
+}
+
+.reform-hooks h2,
+.reform-hooks__list a,
+.site-footer a,
+.site-footer .fine-print,
+.site-footer__heading,
+.site-footer__base {
+  color: #000;
 }

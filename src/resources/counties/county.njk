@@ -23,7 +23,7 @@ eleventyComputed:
   </header>
 
   {% if not county.ready %}
-     <p class="notice notice--warn"><strong>In progress.</strong> Verified links to the {{ county.name }} County domestic relations court, juvenile court, local rules, and CSEA will be added after editorial review. Until then, confirm details with the county clerk of courts. <strong>Know this county?</strong> <a href="{{ 'src/_data/counties.json' | editUrl }}" rel="noreferrer">Help verify it on GitHub</a> (see <a href="/contribute/">how to contribute</a>).</p>
+      <p class="notice notice--warn"><strong>In progress.</strong> Links to the {{ county.name }} County domestic relations court, juvenile court, local rules, and CSEA will be added once someone checks them against official sources. Until then, confirm details with the county clerk of courts. <strong>Know this county?</strong> <a href="{{ 'src/_data/counties.json' | editUrl }}" rel="noreferrer">Help verify it on GitHub</a> (see <a href="/contribute/">how to contribute</a>).</p>
   {% endif %}
 
   <div class="prose">

@@ -14,7 +14,9 @@ When we get something wrong, we fix it, say so on the page in its change log, an
 Corrections happen in the open on GitHub:
 
 - **[Open a correction issue]({{ site.repo.newIssue }}?template=correction.md)** with the page URL, the claim, and a source.
-- **Or fix it yourself.** Every page has an "Improve this page" link in the footer that opens its source file for editing. Your pull request is reviewed against our editorial checklist.
+- **Or fix it yourself.** Every page has an "Improve this page" link in the footer that opens its source file for editing. A pull request that fixes a real error and passes the automated checks is the fastest way to get it corrected.
+
+This site is written by AI and is not reviewed by a human before publication. Public corrections are how it gets better. See [Written by AI](/about/#written-by-ai).
 
 GitHub is public. Do not include case numbers, names of private individuals, or children's information.
 

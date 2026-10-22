@@ -1,6 +1,9 @@
 // Global site data. Brand name is provisional (see idea.md §12, open question 3).
 // This is a community project: all contact and contribution happens on GitHub.
 const REPO = "https://github.com/acharneski/ohio-family.lawyer";
+// Production branch. Used for edit links AND for deciding which deploys get indexed.
+// These must agree, or production silently ships noindex.
+const BRANCH = "master";
 
 export default {
   name: "ohio-family.lawyer",
@@ -11,7 +14,7 @@ export default {
    // Preview and branch deploys must never be indexed (duplicate content).
    indexable: !(
      process.env.SITE_INDEXABLE === "false" ||
-     (process.env.CF_PAGES_BRANCH && process.env.CF_PAGES_BRANCH !== "main")
+      (process.env.CF_PAGES_BRANCH && process.env.CF_PAGES_BRANCH !== BRANCH)
    ),
    seo: {
      defaultImage: "/og/default.png",
@@ -34,7 +37,7 @@ export default {
      issues: `${REPO}/issues`,
      newIssue: `${REPO}/issues/new`,
      pulls: `${REPO}/pulls`,
-     branch: "master",
+      branch: BRANCH,
    },
 
   nav: {
@@ -82,6 +85,7 @@ export default {
   disclaimer: {
     short:
       "Educational information, not legal advice. This site is not a law firm, and reading it does not create an attorney-client relationship.",
+   ai: "Written by AI and published without human review. Check the sources.",
   },
 
   types: {

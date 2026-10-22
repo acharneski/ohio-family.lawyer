@@ -4,7 +4,7 @@ subtitle: "Parents' distress in adversarial custody cases as a predictable injur
 seoTitle: "Fathers' Mental Health in Custody Litigation: Injury, Not Disorder"
 type: essay
 date: 2026-03-15
-author: "Editorial board"
+author: "AI (ohio-family.lawyer)"
 summary: "Anxiety, depression, anger, and withdrawal in parents caught in long custody disputes are often accurate responses to a hostile environment, not signs of a broken mind. Treating them as pathology misses the cause and hands the system a weapon."
 tags: [mental-health, custody, incentives, fathers]
 series: "Human Cost"
@@ -15,7 +15,7 @@ reviewed_by: ""
 disclaimer: clinical
 changelog:
   - date: 2026-03-15
-    note: "Adapted from \"The Function, Not the Failure: Father's Mental Health as a Predictable Injury of Institutional Betrayal.\" Clinical framing reviewed for advice language. Citations pending."
+    note: "Adapted from \"The Function, Not the Failure: Father's Mental Health as a Predictable Injury of Institutional Betrayal.\" Clinical framing edited to avoid advice language. Citations pending."
 ---
 
 {% callout "note", "If you are struggling right now" %}

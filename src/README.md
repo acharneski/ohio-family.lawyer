@@ -1,0 +1,4 @@
+- Pagefind for static search (built after Eleventy)
+- Plain CSS with design tokens, small ES modules, and no client framework
+- Colors live only in `src/assets/css/themes.css`. A theme sets the base tokens listed there, and derived tones are computed with `color-mix()`. Add a theme by appending a `[data-theme="name"]` block. Fonts, spacing, and the type scale live in `tokens.css`.
+- No third-party requests (enforced by the CSP in `src/_headers`)

@@ -8,15 +8,48 @@ summary: "News, essays, practical resources, and organized reform for Ohio's fam
 {% from "partials/bill.njk" import bill with context %}
 
 <section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Ohio family law · news · research · reform</p>
-    <h1 class="hero__title">Ohio's family courts should be accountable, measurable, and fair to everyone they affect.</h1>
-    <p class="hero__lede">We track the law, publish the evidence, and organize for reform that counts every parent, every child, and every family member, while keeping real protection from abuse non-negotiable.</p>
-    <div class="button-row">
-      <a class="button button--primary" href="/start/">Start here</a>
-      <a class="button" href="/act/">Take action</a>
-       <a class="button" href="/contribute/">Get involved</a>
-    </div>
+   <div class="wrap hero__grid">
+     <div class="hero__copy">
+       <p class="eyebrow">Ohio family law · news · research · reform</p>
+       <h1 class="hero__title">Ohio's family courts should be <em>accountable</em>, <em>measurable</em>, and <mark>fair</mark> to everyone they affect.</h1>
+       <p class="hero__lede">We track the law, publish the evidence, and organize for reform that counts every parent, every child, and every family member, while keeping real protection from abuse non-negotiable.</p>
+       <div class="button-row">
+         <a class="button button--primary" href="/start/">Start here</a>
+         <a class="button" href="/act/">Take action</a>
+         <a class="button" href="/contribute/">Get involved</a>
+       </div>
+     </div>
+
+     <div class="hero__aside">
+       <figure class="seal" aria-hidden="true">
+         <svg viewBox="0 0 200 200" focusable="false">
+           <defs>
+             <path id="seal-ring-path" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/>
+           </defs>
+           <circle class="seal__beads" cx="100" cy="100" r="95"/>
+           <circle class="seal__disc" cx="100" cy="100" r="93"/>
+           <ellipse class="seal__shine" cx="78" cy="70" rx="38" ry="26"/>
+           <circle class="seal__line" cx="100" cy="100" r="84"/>
+           <circle class="seal__line" cx="100" cy="100" r="57"/>
+           <g class="seal__ring">
+             <text class="seal__text"><textPath href="#seal-ring-path" textLength="436" lengthAdjust="spacing">EVIDENCE • DUE PROCESS • PROTECTION • OHIO • </textPath></text>
+           </g>
+           <text class="seal__glyph" x="100" y="104" text-anchor="middle" dominant-baseline="central">§</text>
+         </svg>
+       </figure>
+       <aside class="ledger" aria-labelledby="ledger-heading">
+         <p class="ledger__head"><span id="ledger-heading">Who counts</span><span>Entered</span></p>
+         <ul class="ledger__rows">
+           <li><span class="ledger__party">Children</span><span class="ledger__tick" aria-hidden="true">✓</span></li>
+           <li><span class="ledger__party">Mothers</span><span class="ledger__tick" aria-hidden="true">✓</span></li>
+           <li><span class="ledger__party">Fathers</span><span class="ledger__tick" aria-hidden="true">✓</span></li>
+           <li><span class="ledger__party">Siblings</span><span class="ledger__tick" aria-hidden="true">✓</span></li>
+           <li><span class="ledger__party">Grandparents</span><span class="ledger__tick" aria-hidden="true">✓</span></li>
+           <li class="ledger__row--court"><span class="ledger__party">The court itself</span><span class="ledger__tick" aria-hidden="true">✓</span></li>
+         </ul>
+         <p class="ledger__foot">Everyone the system affects belongs on the ledger, including the system.</p>
+       </aside>
+     </div>
   </div>
 </section>
 
@@ -35,8 +68,10 @@ summary: "News, essays, practical resources, and organized reform for Ohio's fam
   </div>
   <div class="latest-grid">
     <div class="latest-grid__featured">
-      {% set featured = collections.essays | first %}
-      {% for e in collections.essays %}{% if e.data.featured and not featuredSet %}{% set featured = e %}{% set featuredSet = true %}{% endif %}{% endfor %}
+       {# Nunjucks `set` inside a for loop does not escape the loop. Mutate an array instead. #}
+       {% set featuredPool = [] %}
+       {% for e in collections.essays %}{% if e.data.featured %}{% set _ = featuredPool.push(e) %}{% endif %}{% endfor %}
+       {% set featured = featuredPool[0] or (collections.essays | first) %}
       {% if featured %}
         {{ card(featured, true) }}
       {% else %}
@@ -61,7 +96,7 @@ summary: "News, essays, practical resources, and organized reform for Ohio's fam
       <h2 id="agenda-heading">The reform agenda</h2>
       <p><a href="/reform/agenda/">See all {{ reformAgenda.length }} priorities</a></p>
     </div>
-    <p class="section-lede">Twelve numbered priorities. Each one cites current Ohio law, states the strongest objections, and explains how abuse protections are preserved.</p>
+     <p class="section-lede">{{ reformAgenda.length }} numbered priorities. Each one cites current Ohio law, states the strongest objections, and explains how abuse protections are preserved.</p>
     <ol class="tile-grid">
       {% for p in reformAgenda %}
         <li class="tile">
@@ -119,6 +154,7 @@ summary: "News, essays, practical resources, and organized reform for Ohio's fam
       <li><strong>Label argument and reporting.</strong> News and briefs report. Essays argue. Every piece carries a badge.</li>
       <li><strong>Steelman the opposition.</strong> Every brief answers its strongest objections in writing.</li>
       <li><strong>Protection is permanent.</strong> No proposal that weakens protection from real abuse, neglect, or domestic violence is in scope.</li>
+       <li><strong>Written by AI. Unapologetically.</strong> No human review stands between the draft and the page. Judge it by its sources, not its author. <a href="/about/#written-by-ai">Why</a>.</li>
     </ul>
     <p><a href="/about/">Our editorial standards</a> · <a href="/corrections/">Corrections</a></p>
   </div>

@@ -13,9 +13,12 @@
   { "term": "Juvenile court", "definition": "The court that, in most Ohio counties, hears custody, parenting-time, and support cases between parents who were never married to each other, as well as abuse, neglect, and dependency cases." },
   { "term": "Legal custodian", "definition": "The person with legal authority over a child's care and major decisions. Under ORC § 3109.042, an unmarried mother is the sole residential parent and legal custodian until a court orders otherwise." },
   { "term": "Magistrate", "definition": "A court officer who hears many family cases and issues decisions that a judge must adopt. A party can file written objections to a magistrate's decision, generally within 14 days." },
+   { "term": "Parenting coordinator", "definition": "A person appointed by the court to help parents carry out a parenting order and resolve day-to-day disputes about it. In Ohio, parenting coordination is governed by the Rules of Superintendence (Sup.R. 90). Coordinators are usually paid by the parties." },
   { "term": "Parenting time", "definition": "The time a parent spends with a child under a court order. See ORC § 3109.051." },
   { "term": "Pro se", "definition": "Representing yourself in court without a lawyer." },
   { "term": "Residential parent", "definition": "The parent with whom a child primarily lives, and whose residence usually determines the child's school district." },
+   { "term": "Reunification therapy", "definition": "Counseling ordered or agreed to in order to rebuild a relationship between a child and a parent after a period of little or no contact. It is not a single standardized treatment. Methods, credentials, and costs vary widely." },
   { "term": "Shared parenting", "definition": "An arrangement under ORC § 3109.04 in which both parents share parental rights and responsibilities under a court-approved shared parenting plan. It does not necessarily mean equal time." },
+   { "term": "Supervised parenting time", "definition": "Parenting time that takes place in the presence of an approved third party, often at a visitation center or with a paid supervisor. It is usually ordered where a court has concerns about safety. Who pays, and how long it lasts, depend on the order." },
   { "term": "Title IV-D", "definition": "The part of the federal Social Security Act that funds state child support enforcement programs, including federal incentive payments tied to performance measures such as collections." }
 ]

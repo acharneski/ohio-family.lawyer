@@ -21,11 +21,12 @@ series:
     <section class="series" aria-labelledby="series-{{ loop.index }}">
       <h2 id="series-{{ loop.index }}">{{ s }}</h2>
       <div class="card-list">
-        {% set found = false %}
+         {# A `set` inside the loop below would not survive it, so collect into an array. #}
+         {% set inSeries = [] %}
         {% for item in collections.essays %}
-          {% if item.data.series == s %}{% set found = true %}{{ card(item) }}{% endif %}
+           {% if item.data.series == s %}{% set _ = inSeries.push(item) %}{{ card(item) }}{% endif %}
         {% endfor %}
-        {% if not found %}<p class="empty">Forthcoming.</p>{% endif %}
+         {% if not inSeries.length %}<p class="empty">Forthcoming.</p>{% endif %}
       </div>
     </section>
   {% endfor %}

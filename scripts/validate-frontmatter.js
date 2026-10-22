@@ -59,9 +59,6 @@ for await (const file of walk(ROOT)) {
     if (bad.length) err(`reform_priorities out of range: ${bad.join(', ')}`);
   }
 
-  if (data.status === 'published' && type !== 'page' && type !== 'news' && !data.reviewed_by) {
-    warnings.push(`${rel}: published without "reviewed_by"`);
-  }
   if (type === 'news' && data.status === 'published' && data.kind !== 'brief' && !data.source_url) {
     warnings.push(`${rel}: news item has no source_url`);
   }

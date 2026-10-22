@@ -4,7 +4,7 @@ subtitle: "The Alignment Manifesto, as a working rubric"
 type: foundation
 date: 2026-03-01
 updated: 2026-03-15
-author: "Editorial board"
+author: "AI (ohio-family.lawyer)"
 summary: "A society is healthy to the degree its institutions make each person's success depend on helping others succeed. This is the standard we apply to every bill and court practice."
 series: "Foundations"
 status: review

@@ -31,17 +31,16 @@ GitHub is **public**. Never post case numbers, names of private individuals, chi
 ### Writing and review
 
 - **Draft a guide or brief.** Follow the templates and the [editorial standards](/about/#editorial-standards). Drafts start with `status: draft` and go through review.
-- **Practitioners, mediators, clinicians, and DV advocates:** review is the most valuable thing you can give. Open an issue on any page you can check, or comment on open pull requests.
 - **Steelman us.** If you disagree with a position, write the strongest objection. Briefs are required to answer it.
 
 ### Code and design
 
 The site is static: Eleventy, Nunjucks, plain CSS, and small ES modules. It has no trackers and no third-party scripts. Accessibility, performance, print styles, and data tooling are all open for help. See [`CONTRIBUTING.md`]({{ site.repo.url }}/blob/{{ site.repo.branch }}/CONTRIBUTING.md) to run it locally.
 
-## How contributions are reviewed
+## How changes land
 
 1. You open an issue or a pull request.
-2. A reviewer checks it against the [editorial checklist]({{ site.repo.url }}/blob/{{ site.repo.branch }}/docs/editorial-checklist.md): sources, "law as of" dates, labeling, and preserved abuse protections.
+2. Automated checks run (`pnpm test`). Content should meet the [publishing checklist]({{ site.repo.url }}/blob/{{ site.repo.branch }}/docs/editorial-checklist.md): sources, "law as of" dates, labeling, and preserved abuse protections. There is no human editorial review. See [Written by AI](/about/#written-by-ai).
 3. Once merged, the change ships on the next deploy, and the commit history records who changed what and when.
 
 ## House rules
@@ -54,3 +53,4 @@ The site is static: Eleventy, Nunjucks, plain CSS, and small ES modules. It has 
 Text you contribute is published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), like the rest of the site.
 
 [Start on GitHub →]({{ site.repo.url }})
+- **Practitioners, mediators, clinicians, and DV advocates:** nobody checks this AI-written content before it publishes, so what you know is worth more here than anywhere. Open an issue on anything you can show is wrong.

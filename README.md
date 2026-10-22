@@ -1,6 +1,11 @@
 # ohio-family.lawyer
 
 A static, evidence-first publication and advocacy hub on Ohio family law, built as an open-source community project. See `idea.md` for the full plan.
+## This is AI
+Every page on this site is written by AI. No editor, fact-checker, clinician, or attorney signs off before a page ships, and the site does not pretend otherwise. If you want to dismiss it as slop, that's your call.
+What it offers instead is checkable. Every legal claim links to a primary source. Every page carries `law_as_of` and `generated_by` front matter. Every error can be filed as a public issue and fixed in the open. Judge it by its citations, not its author.
+This is scalable cognition pointed at a system that counts on nobody having the time, money, or stamina to read everything it does. It gives voice to the voiceless, illuminates the darkness, and challenges injustice with the intent to win.
+
 
 ## Contributing
 
@@ -42,7 +47,6 @@ Search only works after `pnpm build`, because Pagefind indexes the built site.
 Status workflow:
 
 - `draft`: visible only in `pnpm dev`, never built.
-- `review`: built, with a "pending editorial review" notice.
 - `published`: built normally.
 - `archived`: built, with an archived notice.
 
@@ -65,7 +69,9 @@ Data lives in `src/_data/`: `site.js` (navigation, crisis lines, rubric), `refor
 - [ ] Migrate essay text (see `who-decides-who-counts.md` and Appendix C of `idea.md`).
   - [ ] Strip saved-from comments, extension scripts, and placeholder metadata.
 - [ ] Verify shared-parenting legislation status (priority 2).
-- [ ] Attorney review of `/disclaimer/`, the start pages, and the lobbying structure.
-- [ ] DV-advocate review of `/start/safety-first/` and priority 9.
 - [ ] Set `site.newsletter.action` once the provider account exists.
 - [ ] Complete funding and conflict-of-interest disclosure on `/about/`.
+- `review`: built, with a notice that automated checks are still pending.
+- [ ] Add the AI-authorship disclosure to the footer and `/about/`.
+- [ ] Check ORC 101.70–101.79 lobbying thresholds before any organized campaign.
+- [ ] Confirm every resource on `/start/safety-first/` links to a live, official service, and that priority 9 keeps fast protective orders intact.

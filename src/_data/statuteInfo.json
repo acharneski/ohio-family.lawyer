@@ -39,6 +39,10 @@
     "name": "Ohio Public Records Act",
     "summary": "Ohio's Public Records Act, ORC 149.43: how to request records from public offices. Access to court case records is also governed by Sup.R. 44–47."
   },
+   "orc-2317-02": {
+     "name": "Privileged communications",
+     "summary": "ORC 2317.02 lists communications that generally cannot be compelled as testimony, including those with physicians and licensed counselors. How the privilege applies when mental health is raised in a custody case is contested. Confirm with an attorney."
+   },
   "sup-r-48": {
     "name": "Guardians ad litem",
     "summary": "The Ohio Rules of Superintendence on guardians ad litem (Sup.R. 48 and its subparts): appointment, training, duties, reports, and complaints."
