@@ -16,7 +16,7 @@ reviewed_by: ""
 disclaimer: standard
 changelog:
   - date: 2026-03-29
-    note: "First draft, written at the request of a contributor with direct experience. Structural analysis only. No individual case, family, or child is described. Citations pending."
+    note: "First draft. Structural analysis only. No individual case, family, or child is described. Citations pending."
 ---
 
 **Thesis.** In many separated families, grandparents become a second household. They provide daily care, transport, supervision of exchanges, and continuity. Ohio law treats that household as a resource while it exists and as a stranger once it is shut out. A system that relies on a caregiver's labor but gives the caregiver no standing has left part of the child's life off the ledger.

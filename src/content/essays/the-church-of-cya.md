@@ -16,7 +16,7 @@ reviewed_by: ""
 disclaimer: standard
 changelog:
   - date: 2026-03-22
-    note: "Imported from inbox/cover_our_ass.md. Converted to house style: front matter, not-claim callout, internal links to the law index and reform agenda, citation and verification markers for the fact-check pass. Prose otherwise unchanged."
+    note: "First published. Converted to house style: front matter, not-claim callout, internal links to the law index and reform agenda, and citation and verification markers for the fact-check pass."
 ---
 
 **Thesis.** An institution's true values are found in the errors it reliably accepts in order to avoid other errors. Left alone, that tolerance drifts toward whatever minimizes blame rather than whatever minimizes harm.
@@ -79,6 +79,7 @@ Political scientists have described this for decades. R. Kent Weaver's 1986 pape
 <!-- CITE: Weaver, "The Politics of Blame Avoidance," Journal of Public Policy 6(4), 1986; Hood, The Blame Game, Princeton UP, 2011. -->
 
 I should concede one thing up front. Some of the asymmetry is morally defensible. Most ethical traditions treat harm you cause differently from harm you fail to prevent. Public trust in medicine was earned back after thalidomide, and after Vioxx it was lost again, so a regulator has legitimate reasons to fear approval errors. The question is not whether blame should be asymmetric. It is whether the asymmetry is *proportionate* to the harm, or proportionate to the headline.
+I should concede one thing up front. Some of the asymmetry is morally defensible. Most ethical traditions treat harm you cause differently from harm you fail to prevent. Thalidomide, and decades later Vioxx, showed what approval errors cost in lives and in public trust, so a regulator has legitimate reasons to fear them. The question is not whether blame should be asymmetric. It is whether the asymmetry is *proportionate* to the harm, or proportionate to the headline.
 
 Once you see the bias, you cannot stop seeing it.
 

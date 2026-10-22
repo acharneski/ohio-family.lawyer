@@ -18,7 +18,7 @@ disclaimer: standard
 featured: true
 changelog:
   - date: 2026-03-01
-    note: "Migrated from genocide_of_fathers.md and retitled. Footnotes pending."
+    note: "Migrated from an earlier draft and retitled. Footnotes pending."
   - date: 2026-03-15
     note: "Full text migrated and adapted to editorial standards. Section I reframed around structure. Citation markers added for the fact-check pass."
 ---

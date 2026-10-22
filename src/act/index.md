@@ -34,11 +34,15 @@ What helps most right now is knowledge about the *system*: how a local rule work
 ## 5. Public comment calendar
 
 Supreme Court of Ohio rule-comment periods, ODJFS rulemaking, and JCARR dates will be listed here.
+
 ## 6. Help build this site
+
 ohio-family.lawyer is an open-source community project on [GitHub]({{ site.repo.url }}). You can:
 - [report an error]({{ site.repo.newIssue }}?template=correction.md) or [suggest a bill to track]({{ site.repo.newIssue }}?template=bill.md);
 - verify your county's court and child support links;
 - draft a guide, a brief, or a plain-language statute summary;
 - review content if you are a practitioner, mediator, clinician, or DV advocate;
 - improve the code, design, or accessibility.
+
+
 See [Contribute](/contribute/) for how to start.

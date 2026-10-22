@@ -22,7 +22,7 @@ eleventyComputed:
     <p class="lede">{{ priority.short }}</p>
   </header>
 
-  {% if priority.verify %}<p class="notice notice--warn"><strong>Verify before publishing:</strong> {{ priority.verify }}</p>{% endif %}
+  {% if priority.verify %}<p class="notice notice--warn"><strong>Not yet verified:</strong> {{ priority.verify }}</p>{% endif %}
   <p class="notice notice--draft"><strong>Stub.</strong> Model language, evidence, fiscal note, and rubric score are in drafting.</p>
 
   <div class="prose">

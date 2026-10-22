@@ -6,7 +6,9 @@ status: published
 ---
 
 
+
 **This website is not a law firm and does not provide legal advice.** The ".lawyer" domain does not mean that a lawyer represents you, or that anyone here is acting as your attorney.
+
 **This website is written by AI and published without human review.** No attorney or editor checks it before it goes live. It can be wrong, including about the law. That is one more reason to read the official text and talk to a licensed Ohio attorney before you act. See [Written by AI](/about/#written-by-ai).
 
 

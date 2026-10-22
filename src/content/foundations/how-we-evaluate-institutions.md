@@ -10,9 +10,9 @@ series: "Foundations"
 status: review
 changelog:
   - date: 2026-03-01
-    note: "Framework page created from least_entropy_morality.md. Full text migration pending."
+    note: "Framework page created from The Alignment Manifesto. Full text migration pending."
   - date: 2026-03-15
-    note: "Migrated from least_entropy_morality.md. Articles 1–7 verbatim; theory sections condensed; added application to Ohio family courts."
+    note: "Migrated from The Alignment Manifesto. Articles 1–7 verbatim; theory sections condensed; added application to Ohio family courts."
 ---
 
 {% callout "note", "This page is the rubric's source of record" %}

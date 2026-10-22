@@ -29,7 +29,7 @@ This essay does not claim that supervised parenting time is never justified, tha
 
 Picture the arrangement as it often works. A parent drives to a center or meets a paid supervisor. He pays by the hour. He sees his children in a room, or a park, or a fast-food restaurant, while someone takes notes. The notes go to a coordinator, a guardian ad litem, or the court. Then he goes home and waits a week to do it again.
 
-Parents who have lived this often describe the visits themselves as the hardest part of the case. That's harder than the hearings, and harder than the birthdays missed. That should not be surprising. A hearing happens once. The supervised hour happens every week. It's a recurring reminder, paid for by the person it reminds, that the system has classified him as a risk to his own children. Often it rests on findings that were never made, under a schedule the other side is not required to honor.
+Parents who have lived this often describe the visits themselves as the hardest part of the case, harder than the hearings and harder than the missed birthdays. That should not be surprising. A hearing happens once. The supervised hour happens every week. It's a recurring reminder, paid for by the person it reminds, that the system has classified him as a risk to his own children. Often that classification rests on findings that were never made, under a schedule the other side is not required to honor.
 
 None of this means the supervisors are the problem. Many are careful and humane. The problem is everything around the hour.
 <!-- CITE: research or survey data on parent experiences of supervised visitation; Ohio visitation-center practices. -->
@@ -38,7 +38,7 @@ None of this means the supervisors are the problem. Many are careful and humane.
 
 Read a typical phased parenting plan with one question in mind: *whose compliance does anyone actually check?*
 
-On one side are a paid visit supervisor, a parenting coordinator, a reunification counselor, and sometimes remote alcohol testing that reports results in real time to the coordinator and to the other parent. Treatment records may be reviewed. Every lapse is recorded by someone whose job is to record it.
+On one side are a paid visit supervisor, a parenting coordinator, a reunification counselor, and sometimes remote substance testing that reports results to the coordinator or the court. Treatment records may be reviewed. Every lapse is recorded by someone whose job is to record it.
 
 On the other side are obligations such as "encourage the relationship," "don't interfere with calls," and "share the children's phone numbers." Nobody is paid to watch those. If they are ignored, the remedy is a motion: a lawyer, a filing fee, a hearing date months away, all paid for by the parent who was wronged.
 
@@ -55,7 +55,7 @@ So the money keeps flowing whether or not the parent is seeing his children. Par
 
 ## IV. The Off Switch Is Money
 
-Here is the failure mode in its simplest form. A supervised parent loses his job, or leaves one that was harming him. Six months, or a year, passes before he finds work. During that time he cannot pay the supervisor. Contact stops.
+Here is the failure mode in its simplest form. A supervised parent loses his income. Months pass before he finds work. During that time he cannot pay the supervisor. Contact stops.
 
 No court found that the children were less safe that year. No hearing was held. The order didn't change. The parent's bank account did. If he wants contact back, he has to restart a process he already paid for, with the same fees, the same monitoring, and the same uncertainty about whether the other side will comply this time.
 

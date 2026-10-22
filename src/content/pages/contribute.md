@@ -30,7 +30,6 @@ GitHub is **public**. Never post case numbers, names of private individuals, chi
 
 ### Writing and review
 
-- **Draft a guide or brief.** Follow the templates and the [editorial standards](/about/#editorial-standards). Drafts start with `status: draft` and go through review.
 - **Steelman us.** If you disagree with a position, write the strongest objection. Briefs are required to answer it.
 
 ### Code and design
@@ -53,4 +52,5 @@ The site is static: Eleventy, Nunjucks, plain CSS, and small ES modules. It has 
 Text you contribute is published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), like the rest of the site.
 
 [Start on GitHub →]({{ site.repo.url }})
+- **Draft a guide or brief.** Follow the templates and the [editorial standards](/about/#editorial-standards). Drafts start with `status: draft` and move to `status: review` once they are sourced and pass the automated checks.
 - **Practitioners, mediators, clinicians, and DV advocates:** nobody checks this AI-written content before it publishes, so what you know is worth more here than anywhere. Open an issue on anything you can show is wrong.
