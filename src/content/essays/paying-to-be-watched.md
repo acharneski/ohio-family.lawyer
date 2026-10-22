@@ -10,13 +10,15 @@ tags: [supervised-visitation, enforcement, incentives, fathers]
 series: "Human Cost"
 statutes: ["ORC 3109.051", "ORC 3109.04"]
 law_as_of: 2026-03-29
-reform_priorities: [3, 13, 14, 6]
+reform_priorities: [3, 6, 12, 13, 14]
 status: review
 reviewed_by: ""
 disclaimer: standard
 changelog:
   - date: 2026-03-29
     note: "First draft. Structural analysis. No individual case is described. Citations pending."
+  - date: 2026-05-03
+    note: "Cross-references reviewed. Added links to Credibility Follows Evidence, Every Word an Exhibit, Two Sets of Books, Income You Don't Have, Splitting the Baby, and The Standard Schedule. Added priority 12 to front matter to match body links."
 ---
 
 **Thesis.** A parenting order is a set of obligations on two people. When one side's obligations are monitored by paid professionals who report in real time, and the other side's are monitored by no one, the order is not neutral, whatever it says on paper. And when contact is the only part of the order that depends on a parent's ability to pay, money, not risk, decides when a child loses a parent.
@@ -29,9 +31,9 @@ This essay does not claim that supervised parenting time is never justified, tha
 
 Picture the arrangement as it often works. A parent drives to a center or meets a paid supervisor. He pays by the hour. He sees his children in a room, or a park, or a fast-food restaurant, while someone takes notes. The notes go to a coordinator, a guardian ad litem, or the court. Then he goes home and waits a week to do it again.
 
-Parents who have lived this often describe the visits themselves as the hardest part of the case, harder than the hearings and harder than the missed birthdays. That should not be surprising. A hearing happens once. The supervised hour happens every week. It's a recurring reminder, paid for by the person it reminds, that the system has classified him as a risk to his own children. Often that classification rests on findings that were never made, under a schedule the other side is not required to honor.
+Parents who have lived this often describe the visits themselves as the hardest part of the case, harder than the hearings and harder than the missed birthdays. That should not be surprising. A hearing happens once. The supervised hour happens every week. It's a recurring reminder, paid for by the person it reminds, that the system has classified him as a risk to his own children. Often that classification rests on findings that were never made (see [Credibility Follows Evidence](/essays/credibility-follows-evidence/)), under a schedule the other side is not required to honor.
 
-None of this means the supervisors are the problem. Many are careful and humane. The problem is everything around the hour.
+None of this means the supervisors are the problem. Many are careful and humane. The problem is everything around the hour. [The Standard Schedule](/essays/the-standard-schedule/), a short story, imagines that arrangement with the man who built it on the other side of the glass.
 <!-- CITE: research or survey data on parent experiences of supervised visitation; Ohio visitation-center practices. -->
 
 ## II. Who Is Monitored, and Who Is Not
@@ -43,19 +45,21 @@ On one side are a paid visit supervisor, a parenting coordinator, a reunificatio
 On the other side are obligations such as "encourage the relationship," "don't interfere with calls," and "share the children's phone numbers." Nobody is paid to watch those. If they are ignored, the remedy is a motion: a lawyer, a filing fee, a hearing date months away, all paid for by the parent who was wronged.
 
 An order with that shape produces a predictable record. One parent generates a thick file of monitored behavior, where any slip is documented. The other generates almost nothing, because nothing was measured. When the case comes back to court, the thick file looks like evidence of risk, and the empty one looks like evidence of compliance. Neither impression is about the parents. Both are about the instrumentation.
+Court-ordered co-parenting apps can reproduce the same asymmetry in writing, logging every word one parent sends and none of what happens at the door. See [Every Word an Exhibit](/essays/every-word-an-exhibit/).
+
 
 ## III. Enforcement Is Billable. Noncompliance Is Free.
 
 Every step toward more contact costs money: the supervisor, the coordinator, the counselor, the testing, the attorney, the motions. Not following the schedule costs nothing unless the other parent pays to prove it.
 
-Compare child support. Support is withheld from wages automatically, tracked by a county agency, and backed by license suspension and contempt. The agency doesn't need the receiving parent to hire a lawyer. It is funded, in part, by federal incentive payments tied to collections. See [priority 3](/reform/agenda/tie-obligations-to-standing/).
+Compare child support. Support is withheld from wages automatically, tracked by a county agency, and backed by license suspension and contempt. The agency doesn't need the receiving parent to hire a lawyer. It is funded, in part, by federal incentive payments tied to collections. See [priority 3](/reform/agenda/tie-obligations-to-standing/) and [Two Sets of Books](/essays/two-sets-of-books/), Section II.
 <!-- CITE: 42 U.S.C. § 658a incentive structure; Ohio CSEA enforcement tools. -->
 
 So the money keeps flowing whether or not the parent is seeing his children. Parenting time is the one part of the order that depends on the other parent's cooperation, and the one part that stops when he can't pay.
 
 ## IV. The Off Switch Is Money
 
-Here is the failure mode in its simplest form. A supervised parent loses his income. Months pass before he finds work. During that time he cannot pay the supervisor. Contact stops.
+Here is the failure mode in its simplest form. A supervised parent loses his income. Months pass before he finds work. During that time he cannot pay the supervisor. Contact stops. His support order, meanwhile, usually keeps running at the old rate until he files to change it. See [Income You Don't Have](/essays/income-you-dont-have/).
 
 No court found that the children were less safe that year. No hearing was held. The order didn't change. The parent's bank account did. If he wants contact back, he has to restart a process he already paid for, with the same fees, the same monitoring, and the same uncertainty about whether the other side will comply this time.
 
@@ -66,7 +70,7 @@ Many parents in that position make a rational calculation and decline to pay for
 
 Supervised orders often have no end date and no written criteria for stepping down. That would be bad enough in any setting. In a custody case it is worse, because the children keep aging.
 
-A child who was nine when supervision started may be sixteen when anyone gets around to reviewing it. At eighteen, the order no longer governs contact at all. A process that moves at the speed of motions and billing can outlast a childhood without ever reaching a decision about whether supervision was needed. Delay isn't a neutral holding pattern. It's a decision, made by default.
+A child who was nine when supervision started may be sixteen when anyone gets around to reviewing it. At eighteen, the order no longer governs contact at all. A process that moves at the speed of motions and billing can outlast a childhood without ever reaching a decision about whether supervision was needed. Delay isn't a neutral holding pattern. It's a decision, made by default. [Splitting the Baby](/essays/splitting-the-baby/) describes how that delay shapes any settlement reached in the meantime.
 
 ## VI. The Records Bind
 

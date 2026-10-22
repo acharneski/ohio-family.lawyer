@@ -17,6 +17,8 @@ disclaimer: standard
 changelog:
   - date: 2026-03-15
     note: "Adapted from \"The Hypocrisy of 'Always Believe Women'.\" Retitled; refocused on Ohio family courts; national-politics sections removed. Citations pending."
+  - date: 2026-05-03
+    note: "Cross-references reviewed. Added links to related essays published later (Who Decides Who Counts, Splitting the Baby, Paying to Be Watched, The Function, Not the Failure, The Church of CYA) and to priority 10."
 ---
 
 **Thesis.** Any rule that assigns truth by the identity of the speaker rather than by the evidence is incompatible with due process, and in the end it harms the people it was meant to protect. Credibility should follow evidence, for every claim and every speaker.
@@ -56,7 +58,7 @@ Hate-speech categories were built to catch explicit hostility. They were never d
 
 Our legal system rests on a few hard-won principles: the presumption of innocence, the burden of proof on the party making the claim, the right to confront evidence, and findings before consequences. They exist because human judgment is fallible, and because unchecked accusation, however sincerely believed, has been a tool of oppression as often as a tool of justice.
 
-"Always believe," taken literally, inverts each of them: presumed guilt, a reversed burden, and deference in place of scrutiny. Both cannot operate at once. Where deference wins, accusation begins to function as a verdict, and a defense begins to function as evidence of guilt.
+"Always believe," taken literally, inverts each of them: presumed guilt, a reversed burden, and deference in place of scrutiny. Both cannot operate at once. Where deference wins, accusation begins to function as a verdict, and a defense begins to function as evidence of guilt. In family court the second half has a familiar label: a parent who contests an allegation too forcefully risks being called "high conflict." See [Who Decides Who Counts](/essays/who-decides-who-counts/), Section III, and [priority 10](/reform/agenda/dissent-is-information/).
 <!-- CITE: documented examples from campus and workplace proceedings, and Ohio family-court restrictions entered without findings. Use published decisions, not anecdotes. -->
 
 ## V. History Already Ran This Experiment
@@ -70,12 +72,14 @@ Those cases are not offered to equate anyone with the people who wronged those d
 The damage is most concrete in family courts, where an allegation can shape a child's living arrangements for years.
 
 Family courts already face strong pressure toward caution. A judge who restricts contact on an allegation that turns out false bears little visible cost. A judge who declines to restrict contact on an allegation that turns out true may face public disaster. Add an automatic-belief norm to that asymmetry and the result is predictable. Allegations are treated as established well before any hearing. Contact is curtailed on precautionary logic rather than findings. Some parties learn that an allegation is leverage.
+Two later essays follow those consequences further. [Splitting the Baby](/essays/splitting-the-baby/) traces what happens when an untested allegation enters settlement talks and is priced rather than decided. [Paying to Be Watched](/essays/paying-to-be-watched/) shows what a precautionary restriction costs the parent who lives under it, week after week.
+
 
 None of this requires believing that most allegations are false. It only requires recognizing that any adversarial process that grants automatic credibility to one side will be exploited by *some* of the people who pass through it. The reason is not who they are but what the system rewards. That is a claim about incentives, and it applies to any group handed the same tool.
 
 ## VII. Who Is Harmed
 
-The obvious victims are people wrongly accused, and their children, who may lose a parent for reasons that were never tested.
+The obvious victims are people wrongly accused, and their children, who may lose a parent for reasons that were never tested. What years of that do to a parent is the subject of [The Function, Not the Failure](/essays/the-function-not-the-failure/).
 
 The less obvious victims are genuine survivors. When a system stops distinguishing corroborated claims from bare assertions, every claim loses value. Juries, judges, and the public learn to discount allegations as a class. Weaponizable systems do not only harm the falsely accused. They erode trust in the claims they were built to protect.
 
@@ -85,7 +89,7 @@ If neither accusers nor accused benefit, who does? Mostly institutions and inter
 
 For a university, employer, or agency, "we believed the accuser" works as a liability shield. It is individually rational for each institution to adopt it, because the institution does not bear the downstream cost of a wrong finding. The accused bears it, and eventually so do genuine victims, as the system's outputs become less reliable. Lawyers benefit from more motions and hearings. Media benefit from instant villains and instant victims. Advocacy on every side benefits from simple, emotional narratives.
 
-This is not malice. It is misaligned incentives: each institution optimizes for its own exposure rather than accurate adjudication. No single institution has much reason to stop, because the one that adopts a slower, evidence-proportional standard alone takes the reputational risk of appearing to "side with the accused."
+This is not malice. It is misaligned incentives: each institution optimizes for its own exposure rather than accurate adjudication. No single institution has much reason to stop, because the one that adopts a slower, evidence-proportional standard alone takes the reputational risk of appearing to "side with the accused." [The Church of CYA](/essays/the-church-of-cya/) develops this blame-versus-harm argument across courts, hospitals, schools, and agencies.
 
 ## IX. The Strongest Objections
 

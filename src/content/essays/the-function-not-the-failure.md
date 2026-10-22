@@ -9,13 +9,15 @@ summary: "Anxiety, depression, anger, and withdrawal in parents caught in long c
 tags: [mental-health, custody, incentives, fathers]
 series: "Human Cost"
 statutes: ["ORC 3109.04", "Sup.R. 48"]
-reform_priorities: [3, 5, 6, 10]
+reform_priorities: [3, 4, 5, 6, 9, 10, 12, 13, 14]
 status: review
 reviewed_by: ""
 disclaimer: clinical
 changelog:
   - date: 2026-03-15
     note: "Adapted from \"The Function, Not the Failure: Father's Mental Health as a Predictable Injury of Institutional Betrayal.\" Clinical framing edited to avoid advice language. Citations pending."
+  - date: 2026-05-03
+    note: "Cross-references reviewed. Added links to related essays published later (Splitting the Baby, Two Sets of Books, Every Word an Exhibit, Paying to Be Watched, The Standard Schedule, The Second Arrow) and to priorities 13 and 14."
 ---
 
 {% callout "note", "If you are struggling right now" %}
@@ -40,7 +42,7 @@ This essay looks at that population as people harmed by a process rather than by
 
 The starting point is a shift from credibility that follows evidence to credibility that follows identity, discussed in [Credibility Follows Evidence](/essays/credibility-follows-evidence/). Norms that began as corrections to historical disbelief have, in some settings, hardened into default presumptions. An allegation then works less like a claim to be tested and more like a finding already made.
 
-Family courts are where this bites hardest. Even without any explicit doctrine, they face strong pressure toward caution and an uneven distribution of blame: a judge is rarely faulted for restricting contact, and may be faulted badly for not doing so. Many of the professionals involved are paid by the hour or by the appointment. Under those conditions, an allegation against a parent does not need to be proven to have effects. It needs only to be raised. The burden of disproof falls on the parent.
+Family courts are where this bites hardest. Even without any explicit doctrine, they face strong pressure toward caution and an uneven distribution of blame (see [The Church of CYA](/essays/the-church-of-cya/)): a judge is rarely faulted for restricting contact, and may be faulted badly for not doing so. Many of the professionals involved are paid by the hour or by the appointment. Under those conditions, an allegation against a parent does not need to be proven to have effects. It needs only to be raised. The burden of disproof falls on the parent. Once raised, an allegation is more often bargained over than decided; see [Splitting the Baby](/essays/splitting-the-baby/).
 
 This is not a claim that allegations are generally false, or that courts intend cruelty. It is a claim about mechanism. A process that gives one side a credibility advantage untethered from evidence creates incentives that some participants will use, cynically or not. The parent on the wrong side of that asymmetry experiences something unlike an ordinary dispute: his testimony and conduct count for less than the allegation itself.
 
@@ -48,7 +50,7 @@ This is not a claim that allegations are generally false, or that courts intend 
 
 The deeper harm is not a single ruling. It is what happens to a person's picture of the world when the same pattern repeats, hearing after hearing.
 
-Call it a **trust cascade**. It starts narrowly, with distrust of one judge, one evaluator, one ruling. It does not stay narrow. If the court is not neutral, the system behind it is suspect. If the system is suspect, so is the state that runs it, and the culture that endorses the state. This is not paranoia. It is inference from repeated experience. A parent inside this process for years is being taught, directly, that the society around him does not run on fairness and evidence. No ideology is required, only repetition.
+Call it a **trust cascade**. It starts narrowly, with distrust of one judge, one evaluator, one ruling. It does not stay narrow. If the court is not neutral, the system behind it is suspect. If the system is suspect, so is the state that runs it, and the culture that endorses the state. This is not paranoia. It is inference from repeated experience. A parent inside this process for years is being taught, directly, that the society around him does not run on fairness and evidence. No ideology is required, only repetition. When the rules themselves answer the same question two different ways, the inference comes even faster; see [Two Sets of Books](/essays/two-sets-of-books/).
 
 ## III. Maslow, Not the DSM
 
@@ -76,12 +78,12 @@ That reframing changes what many common responses mean.
 
 **Anger**, deep and sustained rather than explosive, is often what clinicians call *moral injury*: the wound of watching, repeatedly and without recourse, a violation of what one understands fairness to mean.
 
-**Isolation** often works as risk management. When any statement or relationship can be discovered and reframed as instability, pulling back from exposure is not simply avoidance.
+**Isolation** often works as risk management. When any statement or relationship can be discovered and reframed as instability, pulling back from exposure is not simply avoidance. A court-ordered co-parenting app, which makes every written word a potential exhibit, sharpens the pressure; see [Every Word an Exhibit](/essays/every-word-an-exhibit/).
 
 **Substance use**, or the heightened risk of it, is easy to moralize. Under chronic, inescapable stress, people seek relief through whatever channels remain. That is a well-documented response, not a character flaw. The structural trap is that coping can itself be treated as fresh evidence of unfitness.
 <!-- CITE: research on chronic stress and substance use; avoid overstating causation. -->
 
-**Seeking help** is the healthiest response, and in a contested case it can be the most exposed. A parent who starts therapy because his situation is unbearable is doing the right thing. Yet therapy records and attendance can come up in litigation. The process can make help-seeking feel like a liability, which is one of its cruelest effects.
+**Seeking help** is the healthiest response, and in a contested case it can be the most exposed. A parent who starts therapy because his situation is unbearable is doing the right thing. Yet therapy records and attendance can come up in litigation. The process can make help-seeking feel like a liability, which is one of its cruelest effects. See [Paying to Be Watched](/essays/paying-to-be-watched/), Section VI, and [priority 14](/reform/agenda/treatment-is-not-testimony/).
 
 **Dissociation**, the sense of unreality or of not trusting one's own perceptions, can be the mind shedding load when the volume of threatening, contradictory information exceeds what can be processed.
 
@@ -89,7 +91,7 @@ None of these responses by itself shows a broken person. Often they show a perso
 
 ## V. The Loop
 
-What makes this especially corrosive is that the harm can feed itself, and that it costs money. A parent under chronic stress develops symptoms: anxiety, anger, exhaustion, a lapse in composure at a high-stakes hearing. Those symptoms can be read by evaluators, guardians ad litem, and judges as evidence of risk rather than evidence of strain. That can trigger more intervention: evaluations, counseling, supervised visitation, testing, parenting classes, often with fees attached and run by providers whose caseloads depend on referrals.
+What makes this especially corrosive is that the harm can feed itself, and that it costs money. A parent under chronic stress develops symptoms: anxiety, anger, exhaustion, a lapse in composure at a high-stakes hearing. Those symptoms can be read by evaluators, guardians ad litem, and judges as evidence of risk rather than evidence of strain. That can trigger more intervention: evaluations, counseling, supervised visitation, testing, parenting classes, often with fees attached and run by providers whose caseloads depend on referrals. [Paying to Be Watched](/essays/paying-to-be-watched/) follows one version of this loop through supervised parenting time. [The Standard Schedule](/essays/the-standard-schedule/) dramatizes the whole of it.
 
 The loop is simple. Distress is read as risk. Risk justifies intervention. Intervention produces more distress and more cost. Nobody needs to design it. It needs only incentives that point the wrong way, repeated across thousands of cases.
 <!-- CITE: Ohio data on GAL fees and court-ordered program costs, if obtainable via records requests (priority 12). -->
@@ -116,7 +118,7 @@ The structural problem is a process that cannot reliably tell true claims from f
 
 ### What helps people get through it
 
-For a parent living through this now, the realistic goals are smaller. The following is general information, not advice for your case; talk to your own clinician and attorney.
+For a parent living through this now, the realistic goals are smaller. The following is general information, not advice for your case; talk to your own clinician and attorney. [The Second Arrow](/essays/the-second-arrow/) develops several of these points at greater length.
 
 - **Shrink the job.** The goal is not to prove your innocence to the world. It is to stay alive and steady until conditions change.
 - **Keep a factual record**, not as a crusade but as a memory aid, because chronic stress degrades memory. A clean timeline helps you and anyone trying to help you. See the [Start here](/start/) page on keeping a factual log.
@@ -161,3 +163,4 @@ None of this erases what happened. It is closer to rehabilitation after a physic
 The parents described here are not best understood by diagnosis. They are best understood by injury, caused by a process that can let presumption stand in for evidence and then treat the predictable consequences as more evidence. Their anxiety can be threat detection. Their depression can be energy conservation. Their anger can be moral injury. Their isolation can be risk management. Their distrust of institutions can be inference from experience.
 
 Seeing this does not mean giving up on mental health care. Therapy, community, stability, and care are essential. It means offering that care without asking the person to accept a false diagnosis of his mind in place of an accurate description of his circumstances. The work, for clinicians, advocates, and parents themselves, is to help people survive that reality, record it where useful, step back from it where possible, and rebuild lives that no longer depend on the institution that harmed them.
+- **Supervision with an exit, and no penalty for seeking care**: every restriction states a reason and a review date, and no adverse inference is drawn from starting or declining treatment ([priorities 13](/reform/agenda/supervision-with-an-exit/) and [14](/reform/agenda/treatment-is-not-testimony/)).

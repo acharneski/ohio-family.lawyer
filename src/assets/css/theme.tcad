@@ -1,0 +1,296 @@
+# =============================================================================
+# ohio-family.lawyer — "The Ledger": constraint-solved colour theme
+#
+# Source of truth before migration: src/assets/css/themes.css (base + derived
+# tokens). base.css / components.css / tokens.css hold NO raw colours (verified:
+# every colour is var(--…), currentcolor or transparent). print.css holds
+# #fff / #000 only, deliberately excluded ("paper is paper").
+#
+# Themes FOUND (not proposed):
+#   light = "ledger"        :root
+#   dark  = "ledger-night"  @media (prefers-color-scheme: dark) :root
+# Mechanism: prefers-color-scheme, with [data-theme] reserved for overrides
+# (themes.css contract §4) → switching "media,attribute".
+#
+# ---------------------------------------------------------------------------
+# SUMMARY
+#   files scanned     5  (base, components, print, themes, tokens)
+#   literals          41 in themes.css (20 base values × 2 themes, plus #000
+#                     used twice in dark); 2 in print.css (skipped)
+#   clusters          36 (merged: ledger light badge-essay == accent #1f4e5f;
+#                         badge-page == ink-muted #6b6356; press == ink #1d1a16;
+#                         dark press == shadow-tone #000)
+#   themes            2 found, 0 proposed
+#   tokens exported   29
+#   a11y findings     2 (see FINDINGS)
+#
+# ---------------------------------------------------------------------------
+# INVENTORY (light / dark, OKLCH approx.)       usage (property class)
+#   paper        #f3ede1 94.3 .016 85 | #141310 17.4 .006 90   bg (html, ::before seams)
+#   paper-raised #fbf8f2 97.8 .008 85 | #221f1a 23.6 .009 80   bg (cards, buttons, panels)
+#   paper-deep   #e8dfcd 90.5 .023 85 | #1b1915 20.6 .008 80   bg (tinted sections)
+#   ink          #1d1a16 21.0 .008 70 | #ede5d3 92.0 .020 85   text, borders, press
+#   ink-soft     #3b362f 33.0 .013 75 | #d3c9b4 83.5 .028 85   text
+#   ink-muted    #6b6356 50.0 .020 80 | #9e957f 66.0 .028 88   text (meta, captions)
+#   rule         #d5c9b3 83.0 .030 85 | #3a352b 33.5 .016 85   border
+#   accent       #1f4e5f 41.0 .060 225| #73b5ae 72.0 .070 185  bg (primary), text
+#   accent-ink   #f7f2e7 96.0 .012 85 | #0e1716 18.0 .012 190  text on accent
+#   accent-2     #8b2e26 43.0 .130 30 | #d9705f 66.0 .120 32   seals, marks, stamps
+#   accent-2-ink #faeee0 95.5 .018 70 | #1d0c08 16.0 .030 35   text on wax
+#   gilt         #a97c26 61.0 .110 78 | #d9b25c 78.0 .110 85   ornaments, night headings
+#   link         #1b5266 42.0 .065 228| #8fc8c1 78.5 .060 185  text
+#   focus        #c98a1b 68.0 .140 72 | #e7a93a 77.0 .140 75   outline
+#   warn-bg      #f6e5b8 92.0 .060 90 | #352a10 28.0 .045 85   bg (notices)
+#   warn-ink     #4c3805 34.0 .070 80 | #f1dba0 89.0 .080 90   text on warn
+#   night        #182221 23.0 .013 185| #0b0c0a 13.5 .004 120  bg (banner, footer)
+#   night-ink    #ebe3d1 91.0 .020 85 | #e6ddcb 89.5 .020 85   text on night
+#   night-muted  #a59d89 68.0 .025 88 | #958c79 63.5 .025 85   text on night
+#   badge-*      news #4a5663 guide #84561f brief #56602f foundation #5c4766
+#                essay #1f4e5f page #6b6356 ink #fbf6ec   (dark: lighter, same hues)
+#   press        #1d1a16 | #000       shadow-tone #3b2a12 | #000
+# Non-colour: grain opacity/filter (not tokenised, stays in themes.css).
+# Shadows/overlays: all built with color-mix(… transparent) from shadow-tone,
+# ink, accent, gilt, warn-ink → kept as color-mix in CSS (alpha, see Migration).
+#
+# ---------------------------------------------------------------------------
+# TOKEN MAP  (token → custom property → role)
+#   canvas     --color-canvas        anchor    paper
+#   surface1   --color-surface-1     derived   paper-raised (lighter than canvas)
+#   surface2   --color-surface-2     derived   paper-deep   (darker than canvas)
+#   text       --color-text          derived   ink
+#   textSoft   --color-text-soft     derived   ink-soft
+#   textMuted  --color-text-muted    derived   ink-muted (+ badge-page merged)
+#   border     --color-border        derived   rule
+#   brand      --color-brand         anchor    accent (+ light badge-essay)
+#   brandInk   --color-brand-ink     derived   accent-ink
+#   wax        --color-wax           anchor    accent-2
+#   waxInk     --color-wax-ink       derived   accent-2-ink
+#   gilt       --color-gilt          anchor    gilt
+#   link       --color-link          derived   link
+#   focusRing  --color-focus-ring    derived   focus
+#   warnBg     --color-warn-bg       derived   warn-bg
+#   warnInk    --color-warn-ink      derived   warn-ink
+#   night      --color-night         anchor    night
+#   nightInk   --color-night-ink     derived   night-ink
+#   nightMuted --color-night-muted   derived   night-muted
+#   badgeNews/Essay/Brief/Guide/Foundation/Page, badgeInk  derived
+#   press      --color-press         derived   press
+#   shadowTone --color-shadow-tone   derived   shadow-tone
+#   inkGray, warmth                  orientation (not exported)
+#
+# ---------------------------------------------------------------------------
+# RELATIONS (evidence, light | dark)
+#   text family hue ≈ 70–88 in both themes, C < .03 → near-neutral; hue from
+#     orientation `warmth`, chroma left free per point (C differs .008→.030,
+#     so NO lock C — would move rule by >0.02).                     holds
+#   surface1 brighter than canvas: dL +.035 | +.062 → var raiseL per theme  holds
+#   surface2 darker/recessed: dL −.038 | +.032 → var deepL per theme        holds
+#   contrast text/canvas  ≈15.6 | ≈15.0  floor 7                    holds
+#   contrast textSoft/canvas ≈11 | ≈11   floor 7                    holds
+#   contrast textMuted/canvas ≈5.4 | ≈6.3 floor 4.5                 holds
+#   contrast textMuted/surface2 ≈4.8 | ≈6.0 floor 4.5               holds (tight)
+#   contrast border/canvas ≈1.3 | ≈1.4   floor 3                    FAILS (finding 1)
+#   contrast link/canvas ≈7.7 | ≈9.6     floor 4.5                  holds
+#   link shares brand hue: dH ≈ 3° | 0°                             holds
+#   contrast brandInk/brand ≈8.4 | ≈8.6  floor 4.5                  holds
+#   contrast waxInk/wax ≈8.2 | ≈5.8      floor 4.5                  holds
+#   contrast warnInk/warnBg ≈9.4 | ≈10.7 floor 7                    holds
+#   contrast nightInk/night ≈13 | ≈15    floor 7                    holds
+#   contrast nightMuted/night ≈6.0 | ≈6.4 floor 4.5                 holds
+#   contrast gilt/night ≈4.4 | ≈9.5      floor 3 (large headings)   holds
+#   contrast focusRing/canvas ≈2.2 | ≈9  floor 3                    FAILS light (finding 2)
+#   badges share L within ±.05 per theme; contrast badgeInk ≥ 4.5   holds
+#
+# ---------------------------------------------------------------------------
+# FINDINGS
+#   1. border (rule) on canvas 1.3:1 / 1.4:1 < 3. Rules are decorative
+#      hairlines, NOT component boundaries; floor written as 1.25 (keeps
+#      design). Real controls (button, nav-toggle, input) use ink edges.
+#      Raising to 3 would darken every hairline — design decision pending.
+#   2. focus #c98a1b on paper ≈2.2:1 < 3 (WCAG 2.4.11 non-text). Floor 3 is
+#      written; the solver WILL darken light focusRing (~L 0.58).
+#   3. Near-neutrals (ink*, rule, paper*, night-ink) take hue from `warmth`
+#      (h≈82), not from their own unreliable hue.
+#   4. Light night #182221 is a cool verdigris-black (h≈185), dark night is
+#      neutral; kept as separate anchors per theme.
+#   5. Merged: badge-essay→brand (light only; dark badge-essay #2d6f80 differs
+#      from accent, so badgeEssay stays its own token), badge-page→textMuted
+#      value seed, press→text (light).
+#   6. press / shadow-tone are #000 in dark; L pinned via seeds + L rules.
+#   7. Not written: equal chroma across text family (violates fidelity),
+#      complementary accent (wax h30 vs brand h225 = 165°, outside ±10°).
+#
+# MIGRATION (short form; replace in themes.css, components keep var names)
+#   --paper → var(--color-canvas)      --paper-raised → var(--color-surface-1)
+#   --paper-deep → var(--color-surface-2)  --ink → var(--color-text)
+#   --ink-soft → var(--color-text-soft)    --ink-muted → var(--color-text-muted)
+#   --rule → var(--color-border)       --accent → var(--color-brand)
+#   --accent-ink → var(--color-brand-ink)  --accent-2 → var(--color-wax)
+#   --accent-2-ink → var(--color-wax-ink)  --gilt, --link, --focus, --warn-*,
+#   --night*, --badge-*, --press, --shadow-tone → matching --color-* tokens.
+#   Plumbing: keep the DERIVED color-mix block of themes.css unchanged; it
+#   reads the base names, which become aliases of --color-*. Grain tokens stay.
+#   Order: link theme-tokens.css BEFORE themes.css. print.css: skip.
+# =============================================================================
+
+space oklab
+units none deg
+gamut srgb
+
+project "ohio-family.lawyer — The Ledger"
+template html "preview.html"
+template css "preview.css"
+output css "theme-tokens.css" prefix "color-" format oklch scope ":root" switching "media,attribute" fallback
+output tokens "theme-tokens.json"
+output guide "ohio-family-lawyer-integration.md"
+
+# ---- variables ----------------------------------------------------------
+var raiseL = 0.035                 # canvas → surface1 (raised): +.035 light, +.062 dark
+var deepL  = -0.038                # canvas → surface2 (recessed): −.038 light, +.032 dark
+var bodyFloor  = 7    locked       # AAA body / ink-on-panel text
+var aaFloor    = 4.5  locked       # AA secondary text, links, badges
+var uiFloor    = 3    locked       # focus ring, large gilt headings
+var hairFloor  = 1.25 locked       # decorative hairlines (finding 1)
+
+# ---- inputs -------------------------------------------------------------
+point canvas  at #f3ede1 anchor        label "paper"
+point brand   at #1f4e5f anchor        label "verdigris"
+point wax     at #8b2e26 anchor        label "sealing wax"
+point gilt    at #a97c26 anchor        label "gilt"
+point night   at #182221 anchor        label "night panel"
+point warmth  at oklch(60% 0.03 82) orientation   # hue all near-neutrals lean to
+point inkGray at oklch(21% 0.008 75) orientation  # observed ink, pins text lightness
+
+# ---- outputs (seeds = observed light values) ----------------------------
+point surface1   at #fbf8f2 derived
+point surface2   at #e8dfcd derived
+point text       at #1d1a16 derived
+point textSoft   at #3b362f derived
+point textMuted  at #6b6356 derived
+point border     at #d5c9b3 derived
+point brandInk   at #f7f2e7 derived
+point waxInk     at #faeee0 derived
+point link       at #1b5266 derived
+point focusRing  at #c98a1b derived
+point warnBg     at #f6e5b8 derived
+point warnInk    at #4c3805 derived
+point nightInk   at #ebe3d1 derived
+point nightMuted at #a59d89 derived
+point badgeNews       at #4a5663 derived
+point badgeEssay      at #1f4e5f derived
+point badgeBrief      at #56602f derived
+point badgeGuide      at #84561f derived
+point badgeFoundation at #5c4766 derived
+point badgePage       at #6b6356 derived
+point badgeInk        at #fbf6ec derived
+point press      at #1d1a16 derived
+point shadowTone at #3b2a12 derived
+
+# ---- paper ramp ---------------------------------------------------------
+dL canvas surface1 = raiseL
+dL canvas surface2 = deepL
+lock H warmth surface1 surface2 weight 0.3
+C surface1 = 0.008 weight 0.3
+C surface2 = 0.023 weight 0.3
+
+# ---- ink family: warm near-neutrals, lightness pinned (no -> min) -------
+lock H warmth text textSoft textMuted border nightInk nightMuted weight 0.3
+lock L inkGray text                       # keep ink as dark as designed
+contrast text canvas      >= bodyFloor
+contrast textSoft canvas  >= bodyFloor
+contrast textMuted canvas >= aaFloor
+contrast textMuted surface2 >= aaFloor
+contrast border canvas    >= hairFloor   note "hairline only, finding 1"
+distance border canvas -> min weight 0.05 # hairlines stay faint
+distance textMuted textSoft -> max weight 0.05
+
+# ---- brand, wax, link, focus --------------------------------------------
+lock H brand link
+contrast link canvas >= aaFloor
+distance link brand -> min weight 0.1
+contrast brandInk brand >= aaFloor
+lock H warmth brandInk weight 0.3
+contrast waxInk wax >= aaFloor
+lock H wax waxInk weight 0.2
+lock H gilt focusRing weight 0.3
+contrast focusRing canvas >= uiFloor     note "FAILS today in light, finding 2"
+
+# ---- caution ------------------------------------------------------------
+lock H gilt warnBg warnInk weight 0.3
+contrast warnInk warnBg >= bodyFloor
+
+# ---- night panels -------------------------------------------------------
+contrast nightInk night   >= bodyFloor
+contrast nightMuted night >= aaFloor
+contrast gilt night       >= uiFloor
+
+# ---- badges: one lightness band, distinct hues, legible ink -------------
+lock L badgeNews badgeEssay badgeBrief badgeGuide badgeFoundation badgePage weight 0.2
+H badgeNews = 250 weight 0.3
+H badgeBrief = 115 weight 0.3
+H badgeGuide = 65 weight 0.3
+H badgeFoundation = 320 weight 0.3
+lock H brand badgeEssay weight 0.3
+lock H warmth badgePage badgeInk weight 0.3
+contrast badgeInk badgeNews >= aaFloor
+contrast badgeInk badgeEssay >= aaFloor
+contrast badgeInk badgeBrief >= aaFloor
+contrast badgeInk badgeGuide >= aaFloor
+contrast badgeInk badgeFoundation >= aaFloor
+contrast badgeInk badgePage >= aaFloor
+
+# ---- depth --------------------------------------------------------------
+lock L text press weight 0.5
+L shadowTone <= 0.3
+
+# ---- themes -------------------------------------------------------------
+theme light {                                # ledger (found)
+  canvas  at #f3ede1
+  brand   at #1f4e5f
+  wax     at #8b2e26
+  gilt    at #a97c26
+  night   at #182221
+  warmth  at oklch(60% 0.03 82)
+  inkGray at oklch(21% 0.008 75)
+  var raiseL = 0.035
+  var deepL  = -0.038
+}
+theme dark {                                 # ledger-night (found)
+  canvas  at #141310
+  brand   at #73b5ae
+  wax     at #d9705f
+  gilt    at #d9b25c
+  night   at #0b0c0a
+  warmth  at oklch(60% 0.03 85)
+  inkGray at oklch(92% 0.02 85)
+  var raiseL = 0.062
+  var deepL  = 0.032
+  # seeds only: keep outputs on the correct side of the dark canvas
+  surface1   at #221f1a
+  surface2   at #1b1915
+  text       at #ede5d3
+  textSoft   at #d3c9b4
+  textMuted  at #9e957f
+  border     at #3a352b
+  brandInk   at #0e1716
+  waxInk     at #1d0c08
+  link       at #8fc8c1
+  focusRing  at #e7a93a
+  warnBg     at #352a10
+  warnInk    at #f1dba0
+  nightInk   at #e6ddcb
+  nightMuted at #958c79
+  badgeNews       at #66737f
+  badgeEssay      at #2d6f80
+  badgeBrief      at #6c7642
+  badgeGuide      at #9d6c32
+  badgeFoundation at #7a6385
+  badgePage       at #776e60
+  badgeInk        at #fbf6ec
+  press      at #000000
+  shadowTone at #000000
+}
+
+solver gauss-newton iterations 200 tolerance 1e-6
+view camera (300, 250, 400) target (0, 0, 200) up (0, 0, 1) perspective
+view grid none show labels axes hide seeds

@@ -4,12 +4,12 @@ subtitle: "Ohio's Family Courts and the Architecture of Managed Persons"
 seoTitle: "Who Decides Who Counts: Ohio Family Courts and Parental Standing"
 type: essay
 date: 2026-03-01
-updated: 2026-03-15
+updated: 2026-05-03
 author: "AI (ohio-family.lawyer)"
-summary: "Before any court weighs interests, it decides whose interests are on the ledger at all. Ohio's family law makes that membership decision in ways that push parents, especially fathers, off the books."
+summary: "Before any court weighs interests, it decides whose interests are on the ledger at all. Ohio's family law makes that membership decision in ways that tax parents without representation and govern children without consent, sometimes long past childhood."
 tags: [custody, standing, incentives, ORC-3109]
 series: "Institutional Architecture"
-statutes: ["ORC 3109.04", "ORC 3109.042", "ORC 3119", "ORC 2919.21", "ORC 2919.23", "Sup.R. 48"]
+statutes: ["ORC 3109.04", "ORC 3109.042", "ORC 3119", "ORC 3119.86", "ORC 2111", "ORC 2152", "ORC 2919.21", "ORC 2919.23", "Sup.R. 48"]
 law_as_of: 2026-03-01
 reform_priorities: [1, 2, 3, 4, 5, 6, 10, 11]
 status: review
@@ -21,12 +21,16 @@ changelog:
     note: "Migrated from an earlier draft and retitled. Footnotes pending."
   - date: 2026-03-15
     note: "Full text migrated and adapted to editorial standards. Section I reframed around structure. Citation markers added for the fact-check pass."
+  - date: 2026-03-16
+    note: "Reframed the support obligation as taxation without representation rather than compelled labor. Made obligor language sex-neutral. Added Section VI on the child as the most fully managed person in the system, including paths by which children do not age out. Renumbered later sections."
+  - date: 2026-05-03
+    note: "Cross-references reviewed. Linked the essays that later developed individual sections of this one: Income You Don't Have, Credibility Follows Evidence, Splitting the Baby, Paying to Be Watched, The Second Household, The Church of CYA, The Function, Not the Failure, Every Word an Exhibit, and Two Sets of Books."
 ---
 
-**Thesis.** Any system that balances interests first decides who is on the ledger. Ohio's "best interests of the child" standard, the unmarried-parent default in ORC § 3109.042, and the split between support enforcement and parenting-time enforcement together give one institution the power to define, weigh, and override everyone else's interests.
+**Thesis.** Any system that balances interests first decides who is on the ledger. Ohio's "best interests of the child" standard, the unmarried-parent default in ORC § 3109.042, and the split between support enforcement and parenting-time enforcement together give one institution the power to define, weigh, and override everyone else's interests. The parent who pays is taxed without representation. The child is governed without consent, and does not always get out.
 
 {% callout "not-claim" %}
-This essay does not claim that Ohio's courts replicate chattel slavery, that judges act in bad faith, that mothers are the problem, or that abuse allegations are generally false. It claims that a specific structural move, deciding who counts, produces predictable results regardless of intent.
+This essay does not claim that Ohio's courts replicate chattel slavery, that paying child support makes a parent a slave, that judges act in bad faith, that mothers are the problem, or that abuse allegations are generally false. It claims that a specific structural move, deciding who counts, produces predictable results regardless of intent.
 {% endcallout %}
 
 ## I. A Word That Must Be Earned
@@ -37,18 +41,18 @@ It does not. Slavery was legal. A legal system has to earn its moral standing. I
 
 **Removal by order.** A child's daily life with a parent can be ended by the order of a stranger, enforced by police if the parent resists. A father who keeps his son past the hour a court has set can be charged with interference with custody under ORC § 2919.23. The system calls this the allocation of parental rights. To the parent it is done to, and often to the child, it feels like being taken from one another. The same moment often makes the removed parent a payment source, through a support order the state is federally funded to enforce.
 
-**Obligation that attaches to parenthood.** For eighteen years or more, a parent's income, licenses, passport, and liberty can be subject to an order he did not agree to. That order may be calculated on income the court imputes rather than income he earns, and it is collectible by garnishment and, in the end, jail. Arrears outlive the child's minority. A parent can still be paying for a childhood he was not allowed to share long after it has ended.
+**Obligation that attaches to parenthood.** For eighteen years or more, a parent's income, licenses, passport, and liberty can be subject to an order the parent did not agree to and had no part in designing. That order may be calculated on income the court imputes rather than income the parent earns (see [Income You Don't Have](/essays/income-you-dont-have/)), and it is collectible by garnishment and, in the end, jail. Arrears outlive the child's minority. A parent can still be paying for a childhood they were not allowed to share long after it has ended. This is not ownership. It is closer to a tax levied without representation.
 
 **Money that follows the child.** Custody carries money with it. The residential designation decides which way support flows, and the state draws federal incentive payments tied in part to what it collects. None of this means anyone is "selling" children. It means the child's placement is also a financial event for adults and agencies, and a system should be honest about that.
 <!-- CITE: Title IV-D incentive payment structure, 42 U.S.C. § 658a; Ohio IV-D performance data. -->
 
-**Protection that fails.** No one claims that courts order abuse. The charge is narrower. A system that claims sweeping authority over a child's welfare owns what happens under that authority. Failures run in more than one direction. Some children are placed with dangerous adults, and a parent who raises the alarm is labeled "alienating." Other parents are kept from their children for years on allegations that are never tested. A system that claims the power to protect and then protects poorly owns the failure either way.
+**Protection that fails.** No one claims that courts order abuse. The charge is narrower. A system that claims sweeping authority over a child's welfare owns what happens under that authority. Failures run in more than one direction. Some children are placed with dangerous adults, and a parent who raises the alarm is labeled "alienating." Other parents are kept from their children for years on allegations that are never tested (see [Credibility Follows Evidence](/essays/credibility-follows-evidence/)). A system that claims the power to protect and then protects poorly owns the failure either way.
 <!-- CITE: research on protective-parent outcomes and on unadjudicated restrictions; avoid single anecdotes. -->
 
 **The erosion of a relationship.** Parenthood is not only a private bond. It is how one generation teaches the next about work, restraint, and responsibility. A system that routinely reduces a parent, most often a father, to an every-other-weekend visitor and a payment source is wearing that bond down one household at a time. It does so through procedure rather than force, and it is no less serious for being quiet.
 <!-- CITE: father-absence data, Ohio and national; state the measure precisely. -->
 
-**The price of staying in, and the mark.** Ohio courts do not auction children. In practice, though, a contested case often goes to whoever can keep paying: the retainer, the custody evaluation, the guardian ad litem's fees, years of motions. Parents are also labeled: "deadbeat," "high conflict," "alienator," "obligor in arrears." Those labels go into court records, license databases, and the passport system, and they follow a parent into every later proceeding.
+**The price of staying in, and the mark.** Ohio courts do not auction children. In practice, though, a contested case often goes to whoever can keep paying: the retainer, the custody evaluation, the guardian ad litem's fees, years of motions (see [Splitting the Baby](/essays/splitting-the-baby/) and [Paying to Be Watched](/essays/paying-to-be-watched/)). Parents are also labeled: "deadbeat," "high conflict," "alienator," "obligor in arrears." Those labels go into court records, license databases, and the passport system, and they follow a parent into every later proceeding.
 
 None of this makes Ohio's courts a plantation, and the differences in scale and brutality are real. The point is not any single practice. It is structure. Slavery was not first of all a system of labor extraction. It was a claim about standing. Before the master took an hour of anyone's work, he had already asserted something more basic:
 
@@ -56,8 +60,8 @@ None of this makes Ohio's courts a plantation, and the differences in scale and 
 
 Everything else followed from that first move: the coercion, the extraction, the punishment of resistance, and the welfare story told to justify it.
 
-The claim of this essay is that Ohio's family law system makes the same structural move. It does not do so through malice or conspiracy, and the people inside it mostly believe they are doing good. It does so through a legal architecture that gives one institution the authority to define whose interests count, to weigh them, and to override the people concerned in the name of their own good. Shapes, unlike intentions, produce predictable results. In Ohio, as across the country, the people this shape most often pushes off the ledger are fathers.
-<!-- CITE: Ohio custody-outcome data by parent sex, if any exists. If none, say so explicitly (see Section VII). -->
+The claim of this essay is that Ohio's family law system makes the same structural move. It does not do so through malice or conspiracy, and the people inside it mostly believe they are doing good. It does so through a legal architecture that gives one institution the authority to define whose interests count, to weigh them, and to override the people concerned in the name of their own good. Shapes, unlike intentions, produce predictable results. In Ohio, as across the country, the parents this shape most often pushes off the ledger are fathers, though not only fathers. The person it governs most completely is the child.
+<!-- CITE: Ohio custody-outcome data by parent sex, if any exists. If none, say so explicitly (see Section VIII). -->
 
 ## II. The Membership Function Comes First
 
@@ -69,7 +73,7 @@ Ohio law states its membership function plainly. When a court allocates parental
 
 Look at how parents appear on that list. Their interests are not entered as interests. A father's desire to raise his son appears only as an input to a calculation about the son. A mother's wish to keep her daughter in the community where she grew up counts only to the extent it predicts the daughter's adjustment. The parent is an instrument in the child's welfare function, not a stakeholder in their own right.
 
-Siblings, grandparents, and extended family appear, if at all, as further instruments. The court itself, with its own budget, workload, and institutional interests, never appears on the ledger, although it shapes every outcome.
+Siblings, grandparents, and extended family appear, if at all, as further instruments. [The Second Household](/essays/the-second-household/) describes what that omission costs when grandparents are doing much of the daily care. The court itself, with its own budget, workload, and institutional interests, never appears on the ledger, although it shapes every outcome. [The Church of CYA](/essays/the-church-of-cya/) looks at what those interests reward.
 
 That is the first move. "We are here solely for the best interests of the child" sounds like moral clarity. Structurally, it declares that the institution may stop counting everyone else.
 
@@ -91,7 +95,7 @@ Once all three are in place, the system seals itself. Disagreement becomes evide
 
 Ohio's family courts have their own version of this loop. One statutory best-interest factor asks which parent is more likely to honor and facilitate court-approved parenting time. In practice, a parent who strongly objects to a proposed arrangement, challenges a guardian ad litem's recommendation, or keeps insisting that the process is unjust risks being described as "high conflict," or as unwilling to support the child's relationship with the other parent. Protest becomes a data point against the protester. The more forcefully a parent claims standing, the more the record shows they lack the temperament the system rewards.
 
-This requires no bad actor. It follows from the structure. If the institution defines the interests, judges compliance, and treats resistance as a symptom, then nothing a parent says can register as a legitimate objection.
+This requires no bad actor. It follows from the structure. If the institution defines the interests, judges compliance, and treats resistance as a symptom, then nothing a parent says can register as a legitimate objection. [The Function, Not the Failure](/essays/the-function-not-the-failure/) describes what living inside that loop does to a parent. [Every Word an Exhibit](/essays/every-word-an-exhibit/) describes how a court-ordered messaging app can supply the loop's evidence.
 
 Some people really cannot decide for themselves. An infant is not a competent adult, and a child cannot represent herself in litigation. That is exactly what makes the principle dangerous. Every coercive institution claims its subjects are a special case. The questions an honest observer has to ask are:
 
@@ -111,12 +115,14 @@ Under ORC § 3109.042, an unmarried woman who gives birth is the sole residentia
 Consider what that means. A man can be a legally recognized father, fully liable for the child's support, and still have no secured relationship with the child. His standing as a parent is not presumed. It has to be granted, and the body that grants it is the same institution that decides how much his interests weigh once he is allowed in.
 
 The point is not only that the default favors mothers, although it plainly does. The point is that parenthood becomes a status the court confers rather than a relationship it recognizes. A person who must petition for permission to raise his own child starts outside the ledger. Getting in depends on the discretion of others.
+[Two Sets of Books](/essays/two-sets-of-books/), Section VI, sets this default beside a related fact: married and unmarried parents often have their custody cases heard in different courts.
+
 
 ## V. Obligation Without Standing
 
-The comparison is most uncomfortable where it touches compelled labor.
+This is where the slavery comparison is most tempting and least accurate.
 
-Ohio's child support system, governed by ORC Chapter 3119 and enforced through county child support enforcement agencies, calculates obligations from both parents' incomes. When the court finds a parent voluntarily unemployed or underemployed, it may impute "potential income": income the parent does not earn but the court believes they could. The resulting obligation is not a debt the parent took on. It is an order, based on the institution's estimate of what that person's labor should produce.
+Ohio's child support system, governed by ORC Chapter 3119 and enforced through county child support enforcement agencies, calculates obligations from both parents' incomes. When the court finds a parent voluntarily unemployed or underemployed, it may impute "potential income": income the parent does not earn but the court believes they could. The resulting obligation is not a debt the parent took on. It is an order, based on the institution's estimate of what that person's labor should produce. What happens when that estimate is wrong is the subject of [Income You Don't Have](/essays/income-you-dont-have/).
 
 The enforcement tools are extensive:
 
@@ -133,10 +139,38 @@ Each of these can be defended on its own terms. Children need food, housing, and
 The structural problem is a decoupling. Ohio law treats support and parenting time as legally independent. The obligation to pay does not depend on actually having time with the child, and denial of parenting time is not a defense to nonpayment. Enforcement of the financial obligation is administrative, automatic, and backed by the state. Enforcement of the relationship is slow and expensive. It depends on the parent hiring a lawyer and returning to the same court that set the arrangement in the first place.
 
 So one side of the ledger is enforced by the state, and the other is left to private litigation. The parent's labor is claimed by order and collected by force, while the relationship that is supposed to justify the claim is left unsecured. Meanwhile the bond with the child, the only thing that makes the arrangement morally coherent, is treated as optional.
+Two later essays follow this asymmetry into specific settings. [Two Sets of Books](/essays/two-sets-of-books/), Section II, shows how it reaches the custody hearing itself. [Paying to Be Watched](/essays/paying-to-be-watched/), Section III, shows how it plays out when contact is supervised.
 
-This is not chattel slavery. The parent is not owned. But the shape is recognizable: labor claimed under threat, standing withheld, a mark on the record for anyone who falls behind, and a welfare story explaining why the arrangement serves the person who did not agree to it.
 
-## VI. What Grows Under Selection Pressure
+This is not slavery, and calling it slavery weakens the argument. A support obligor is not owned. They choose their work, keep most of what they earn, and can move, marry, and vote. The better comparison is taxation without representation. A formula the obligor had no part in writing sets the amount, sometimes on income they do not have. The money goes to another household, where the payer has no say in how it is spent. Often the payer also has no secured place in the life of the child it is meant to support. Nonpayment is punished by the state. Payment buys no standing.
+
+Most obligors are fathers, but not all. Some Ohio mothers pay support under the same guidelines and face the same enforcement tools, and the grievance is the same for them. It is a grievance about representation, not ownership.
+<!-- CITE: Ohio IV-D caseload breakdown of obligors by sex; Census Bureau "Custodial Mothers and Fathers and Their Child Support" for national comparison. -->
+
+## VI. The Child Has No Exit
+
+If anyone in this system stands where the comparison actually fits, it is not the parent who pays. It is the child.
+
+Consider the child's position against the premise in Section I: *Yours enter the ledger only when I allow it.* The child does not choose the court, the guardian ad litem, the evaluator, or the schedule. The court may interview the child and may consider the child's wishes under ORC § 3109.04(B), but those wishes do not bind it. The child is usually not a party to the case that governs their life. They are moved between households on a timetable set by strangers, and the arrangement is enforced by police if anyone resists. Their interests are the stated reason for the whole proceeding, yet those interests are defined, weighed, and spoken for entirely by others.
+<!-- CITE: ORC 3109.04(B) (in-camera interview); Ohio law on child party status in custody proceedings. -->
+
+A parent can at least file a motion, appeal, hire a lawyer, or vote for the judges and legislators who shape the system. The child can do none of these things. The parent is taxed. The child is governed.
+[Two Sets of Books](/essays/two-sets-of-books/), Section IV, compares this with how the same state treats a sixteen-year-old in juvenile court.
+
+
+And the child does not always age out. Prolonged parental conflict and the loss of a parent are associated with anxiety, depression, school failure, substance use, and behavior problems. Each of these can bring a young person into further contact with the state:
+
+- **Juvenile court**, through unruly or delinquency cases, where jurisdiction can extend past the eighteenth birthday under ORC Chapter 2152.
+- **Children services and foster care**, when a household under strain breaks down.
+- **Mental-health and disability systems**, where support orders can continue past majority for a child who cannot support themselves (ORC § 3119.86).
+- **Adult guardianship** under ORC Chapter 2111, when a probate court finds that a grown child cannot manage their own affairs.
+<!-- CITE: peer-reviewed research linking interparental conflict and parental loss to child outcomes; Ohio data on juvenile court involvement among children of contested custody cases, if any exists. Confirm ORC 2152 age limits and ORC 3119.86 conditions. -->
+
+Some of these children never become, in the law's eyes, adults who govern themselves. The managed status that began with a custody order turns into a managed life.
+
+The claim here is careful. Family court does not cause every such outcome, and many children in these systems would be there regardless. The claim is that the system adds stress at the point where development is most sensitive, and then never checks whether it did harm (see Section VIII). An institution that governs a person who cannot consent, cannot leave, and may never be released owes that person, at minimum, an honest accounting of the results.
+
+## VII. What Grows Under Selection Pressure
 
 Institutions are better understood by what thrives inside them than by their mission statements.
 
@@ -152,13 +186,13 @@ None of these people needs to be corrupt for the pattern to matter. Most are pro
 
 The family-court version of this pattern does not require anyone to want families harmed. It only requires that institutional success and family success be weakly linked. When they are, a system tends to reproduce whatever feeds it, and everyone inside can sincerely believe they are helping.
 
-This is Goodhart's Law in institutional form. The stated target is child welfare. The rewarded targets are hearings, filings, evaluations, compliance, and collections. Over time, an institution optimizes for what it rewards.
+This is Goodhart's Law in institutional form. The stated target is child welfare. The rewarded targets are hearings, filings, evaluations, compliance, and collections. Over time, an institution optimizes for what it rewards. [The Church of CYA](/essays/the-church-of-cya/) traces the same pattern across courts, hospitals, schools, and agencies.
 
-## VII. The Data the System Does Not Collect
+## VIII. The Data the System Does Not Collect
 
 A common bitter summary of family court is that the child is harmed, the family is destroyed, and the professionals move up. Whether that is true in a given case depends on the case. One fact about the system as a whole is clearer.
 
-Ohio's domestic relations and juvenile courts are not organized to measure their long-term effects on the children they serve. Courts track cases filed, cases closed, time to disposition, and support collected. They do not routinely follow whether children in contested custody cases are doing well five, ten, or twenty years later. They do not compare outcomes across kinds of orders. They do not track whether a parent pushed to the margins later disappeared from the child's life.
+Ohio's domestic relations and juvenile courts are not organized to measure their long-term effects on the children they serve. Courts track cases filed, cases closed, time to disposition, and support collected. They do not routinely follow whether children in contested custody cases are doing well five, ten, or twenty years later. They do not check whether those children later appear in juvenile, children-services, or guardianship dockets. They do not compare outcomes across kinds of orders. They do not track whether a parent pushed to the margins later disappeared from the child's life.
 <!-- CITE: Supreme Court of Ohio Court Statistical Reports (what is and isn't reported); ODJFS performance data. -->
 
 A system that claims a single goal and never checks whether it achieves that goal is not optimizing for it. It is optimizing for what it can measure: throughput, compliance, collections. The best-interest standard then works less as a target than as a justification.
@@ -166,7 +200,7 @@ A system that claims a single goal and never checks whether it achieves that goa
 The broader research on children's outcomes points in a consistent direction. Prolonged parental conflict harms children. Losing meaningful contact with a parent is associated with worse emotional, educational, and economic outcomes. Children generally do better when both parents stay substantially involved, except where there is real abuse or danger. An institution that held itself to that research would treat preserving both parental bonds as a core outcome, see prolonged litigation as a failure, and check its own results.
 <!-- CITE: peer-reviewed reviews on interparental conflict and on shared vs. sole physical custody outcomes. Include studies that cut against the thesis. -->
 
-## VIII. The Strongest Objections
+## IX. The Strongest Objections
 
 An honest essay has to face the best case for the current system.
 
@@ -186,20 +220,20 @@ An honest essay has to face the best case for the current system.
 
 **On judges.** This is right, and it supports the structural argument. The problem is not mainly individual judges. It is an architecture that would produce similar results no matter who sat on the bench. That is why our remedies are legislative and rule-based.
 
-**On the comparison.** It is inflammatory, and we use it deliberately and narrowly. The claim is not that family court is as cruel as slavery. It is that both rest on the same foundational claim: *I possess legitimate authority to declare which people count.* Once that claim is accepted, later harms are easier to justify, because from inside the system they no longer look like harms.
+**On the comparison.** It is inflammatory, and we use it deliberately and narrowly. The claim is not that family court is as cruel as slavery, or that a parent paying support is enslaved. That parent's complaint is about taxation without representation, and it should be made in those terms. The claim is that both systems rest on the same foundational premise: *I possess legitimate authority to declare which people count.* The person on whom that premise falls most completely is the child, who has no vote, no exit, and sometimes no release. Once the premise is accepted, later harms are easier to justify, because from inside the system they no longer look like harms.
 
-## IX. What an Honest Ledger Would Require
+## X. What an Honest Ledger Would Require
 
 If the core problem is the membership function, the remedies start there. Each maps to a numbered priority on our [reform agenda](/reform/agenda/).
 
-1. **Enter every affected person on the ledger.** Parents' interests should be recognized as interests in their own right, not only as inputs to the child's welfare. Siblings and grandparents should be recognized as stakeholders. See [priority 11](/reform/agenda/extended-family-standing/).
+1. **Enter every affected person on the ledger.** Parents' interests should be recognized as interests in their own right, not only as inputs to the child's welfare. Siblings and grandparents should be recognized as stakeholders. See [priority 11](/reform/agenda/extended-family-standing/) and [The Second Household](/essays/the-second-household/).
 
 2. **Recognize parenthood instead of granting it.** A legally established parent should have presumptive standing to a real relationship with the child ([priority 1](/reform/agenda/presumption-of-standing/)). A rebuttable presumption of equal or substantially shared parenting, overcome by evidence of danger or unfitness, would shift the burden to the party seeking to remove a parent ([priority 2](/reform/agenda/shared-parenting-presumption/)).
 <!-- VERIFY: status of shared-parenting presumption bills in the Ohio General Assembly before describing any as pending or past. -->
 
 3. **Tie obligations to standing.** If the state enforces support with administrative speed, it should enforce parenting time with the same seriousness ([priority 3](/reform/agenda/tie-obligations-to-standing/)).
 
-4. **Measure outcomes.** Courts should track, anonymously and over the long term, how children and families fare under different kinds of orders ([priority 4](/reform/agenda/outcome-measurement/)).
+4. **Measure outcomes.** Courts should track, anonymously and over the long term, how children and families fare under different kinds of orders. That includes whether children from contested cases later enter juvenile, children-services, mental-health, or adult-guardianship systems ([priority 4](/reform/agenda/outcome-measurement/)).
 
 5. **Weaken the conflict gradient.** Review fee and appointment structures that reward prolonged dispute ([priority 5](/reform/agenda/gal-evaluator-reform/)). Adopt early mediation with domestic-violence screening, limits on repetitive motions, and default parenting schedules ([priority 6](/reform/agenda/weaken-conflict-gradient/)).
 
@@ -207,7 +241,7 @@ If the core problem is the membership function, the remedies start there. Each m
 
 None of these reforms requires believing that the people in the system are villains. They require only judging systems by their incentives rather than their intentions.
 
-## X. Conclusion: The First Question
+## XI. Conclusion: The First Question
 
 The most important question to ask of Ohio's family courts is not whether they favor mothers or fathers, or even whether they serve children. It comes earlier:
 
@@ -218,5 +252,7 @@ Whoever controls the ledger controls the outcome long before any balancing happe
 Modern institutions rarely admit to that move. They make it implicitly, in the vocabulary of care, and often sincerely believe they are the enlightened alternative to the cruelties of the past. "For your own good" has long been the preferred language of power.
 
 What matters is whether the people governed keep their standing as agents whose interests are honestly counted. By that test, Ohio's family law system has a lot to answer for. It has not built plantations. It has adopted the plantation's first premise: that some institution is entitled to decide who matters.
+
+Its demands on the parent who pays are those of a government that taxes without representation. Its hold on the child is heavier. The child has no vote and no exit, and sometimes the system never lets go.
 
 Fathers matter. Mothers matter. Children, siblings, and grandparents matter. A system that cannot say all of that at once, and enforce it with the same force it uses to collect a payment, has not earned the moral authority it claims, however legal its orders may be.

@@ -17,6 +17,8 @@ disclaimer: standard
 changelog:
   - date: 2026-03-29
     note: "First draft. Structural analysis only. No individual case, family, or child is described. Citations pending."
+  - date: 2026-05-03
+    note: "Cross-references reviewed. Added links to Who Decides Who Counts, Paying to Be Watched, and Credibility Follows Evidence."
 ---
 
 **Thesis.** In many separated families, grandparents become a second household. They provide daily care, transport, supervision of exchanges, and continuity. Ohio law treats that household as a resource while it exists and as a stranger once it is shut out. A system that relies on a caregiver's labor but gives the caregiver no standing has left part of the child's life off the ledger.
@@ -34,7 +36,7 @@ Over years, this is not babysitting. It is a household. The children have beds t
 
 ## II. Necessary, but Not a Party
 
-The court case, meanwhile, is between two parents. The grandparents are not parties. They are not usually interviewed by the guardian ad litem unless someone insists. Their observations of how the children behave before and after parenting time, which parent attends to homework, how exchanges actually go, rarely reach the judge.
+The court case, meanwhile, is between two parents. The grandparents are not parties. They are not usually interviewed by the guardian ad litem unless someone insists. Their observations of how the children behave before and after parenting time, which parent attends to homework, how exchanges actually go, rarely reach the judge. In the terms of [Who Decides Who Counts](/essays/who-decides-who-counts/), they are not on the ledger.
 
 They also occupy an odd position in the conflict. They may be told not to speak to the other parent at exchanges. They become informal supervisors and messengers without any status, any training, or any way to raise a concern except through the parent they live beside. When what they see doesn't match what is being said in court, they have no channel for it. Often, out of loyalty or fear of losing the grandchildren, they stay quiet.
 
@@ -45,13 +47,13 @@ Then something changes. There is a falling-out over money, a new partner, a move
 Under *Troxel v. Granville*, a fit parent's decision about who sees their child gets special weight, and for good reason. Parents, not relatives, are responsible for children. But Ohio gives grandparents a doorway into court only in specific circumstances: a divorce or related case, a parent's death, or a child born to unmarried parents. If the family doesn't fit those categories, or the case is closed, or the child has moved to another state, the grandparents may have no forum at all.
 <!-- CITE: Troxel v. Granville, 530 U.S. 57 (2000); ORC 3109.051, 3109.11, 3109.12; ORC Chapter 3127 on interstate jurisdiction. -->
 
-From the child's side, this is not a change in visitation. It is the loss of a household, often at the same time the child is losing contact with a parent. Nobody records it. No court made a finding that it was in the child's interest. It happened by default.
+From the child's side, this is not a change in visitation. It is the loss of a household, often at the same time the child is losing contact with a parent. Nobody records it. No court made a finding that it was in the child's interest. It happened by default. In that respect it resembles supervised contact that ends when the payments stop ([Paying to Be Watched](/essays/paying-to-be-watched/)): a decision nobody had to make.
 
 ## IV. Witnesses Who Change Their Minds
 
 There is a second, quieter cost. Grandparents who lived through the case often understood it one way at the time and another way later. Sometimes that's because they learned new facts. Sometimes it's because their own relationship with their adult child broke down, and the break reshaped their memory of everything before it.
 
-Courts are right to be careful with that. A witness whose account shifts after a family rupture has an obvious motive. But the same caution means that the people who saw the most, for the longest, are often the least usable witnesses. A system that heard from them while they were still inside the household, routinely and neutrally, would have better evidence than one that hears from them only after they are angry.
+Courts are right to be careful with that. A witness whose account shifts after a family rupture has an obvious motive. But the same caution means that the people who saw the most, for the longest, are often the least usable witnesses. A system that heard from them while they were still inside the household, routinely and neutrally, would have better evidence than one that hears from them only after they are angry. That is the principle argued in [Credibility Follows Evidence](/essays/credibility-follows-evidence/): weigh accounts by what supports them, and gather that support while it still exists.
 
 ## V. The Strongest Objections
 

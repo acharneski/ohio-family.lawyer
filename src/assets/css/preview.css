@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font: 16px/1.6 Georgia, serif;
+  background: var(--color-canvas, #f3ede1);
+  color: var(--color-text, #1d1a16);
+}
+h2 { margin: 0 0 4px; }
+.soft { color: var(--color-text-soft, #3b362f); }
+.muted { color: var(--color-text-muted, #6b6356); }
+a { color: var(--color-link, #1b5266); }
+a:focus-visible { outline: 2px solid var(--color-focus-ring, #c98a1b); outline-offset: 3px; }
+.card {
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid var(--color-border, #d5c9b3);
+  border-radius: 4px;
+  background: var(--color-surface-1, #fbf8f2);
+}
+.tint { padding: 12px; background: var(--color-surface-2, #e8dfcd); }
+.btn {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 2px;
+  background: var(--color-brand, #1f4e5f);
+  color: var(--color-brand-ink, #f7f2e7);
+  box-shadow: 3px 3px 0 var(--color-press, #1d1a16);
+  font: 700 13px/1.2 system-ui, sans-serif;
+  text-transform: uppercase;
+}
+.btn--wax {
+  background: var(--color-wax, #8b2e26);
+  color: var(--color-wax-ink, #faeee0);
+  box-shadow: 3px 3px 0 var(--color-shadow-tone, #3b2a12);
+}
+.warn {
+  padding: 8px 12px;
+  background: var(--color-warn-bg, #f6e5b8);
+  color: var(--color-warn-ink, #4c3805);
+}
+.night {
+  padding: 12px;
+  background: var(--color-night, #182221);
+  color: var(--color-night-ink, #ebe3d1);
+}
+.night h3 { margin: 0; color: var(--color-gilt, #a97c26); }
+.night small { color: var(--color-night-muted, #a59d89); }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  color: var(--color-badge-ink, #fbf6ec);
+  font: 700 11px/1.4 system-ui, sans-serif;
+  text-transform: uppercase;
+}
+.b-news { background: var(--color-badge-news, #4a5663); }
+.b-essay { background: var(--color-badge-essay, #1f4e5f); }
+.b-brief { background: var(--color-badge-brief, #56602f); }
+.b-guide { background: var(--color-badge-guide, #84561f); }
+.b-found { background: var(--color-badge-foundation, #5c4766); }
+.b-page { background: var(--color-badge-page, #6b6356); }
