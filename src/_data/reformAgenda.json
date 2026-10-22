@@ -96,9 +96,11 @@
     "slug": "extended-family-standing",
     "title": "Extended family standing",
     "short": "Recognize siblings and grandparents as stakeholders.",
-    "problem": "Siblings and grandparents appear in custody decisions, if at all, only as factors in someone else's case.",
-    "proposal": "Clarify and strengthen standing for siblings and grandparents to seek companionship and continued contact.",
-    "statutes": ["ORC 3109.051", "ORC 3109.11", "ORC 3109.12"]
+     "problem": "Siblings and grandparents appear in custody decisions, if at all, only as factors in someone else's case. Grandparents who provided years of daily care can lose all contact overnight, and unless a qualifying case is open, or after a child moves out of state, they may have no forum in which to be heard.",
+     "proposal": "Clarify and strengthen standing for siblings and grandparents to seek companionship and continued contact. Give relatives who served as substantial, regular caregivers for a defined period a forum to request continued contact, with a fit parent's decision still given special weight. Require guardians ad litem to interview adults who provide substantial care, and to state in their reports whether they did.",
+     "protections": "A fit parent's decision keeps the special weight required by Troxel v. Granville. Where a parent limits a relative's contact because of abuse, threats, or danger, that decision stays protected, and emergency protection orders remain fast and low-barrier.",
+     "statutes": ["ORC 3109.051", "ORC 3109.11", "ORC 3109.12", "ORC 3127"],
+     "verify": "Verify how Ohio courts apply Troxel and Harrold v. Collier to relative visitation, and how ORC Chapter 3127 treats grandparent visitation after an interstate move, before describing current law."
   },
   {
     "id": 12,
